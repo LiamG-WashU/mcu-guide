@@ -1,0 +1,39 @@
+* {
+	font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: lightgray;
+}
+
+header {
+    min-height: 5vh;
+    align-content: center;
+    background-color: gray;
+}
+
+#navbar {
+    margin: 1vh;
+    text-align: left;
+}
+
+#navbar a {
+    color: black;
+}
+
+main {
+    flex: 1;
+    padding: 1vh;
+}
+
+footer {
+    margin-top: 5vh;
+    margin-left: auto;
+    padding: 1vh;
+}

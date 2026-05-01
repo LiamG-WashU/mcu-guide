@@ -1,0 +1,266 @@
+const XMLData = `
+<!-- Temporary data just for testing: this is Phase One & Two only! -->
+<data>
+    <mediaData>
+        <media>
+            <title>Iron Man</title>
+            <type>Film</type>
+            <majorPrereqs></majorPrereqs>
+            <minorPrereqs></minorPrereqs>
+        </media>
+        <media>
+            <title>The Incredible Hulk</title>
+            <type>Film</type>
+            <majorPrereqs></majorPrereqs>
+            <minorPrereqs></minorPrereqs>
+        </media>
+        <media>
+            <title>Iron Man 2</title>
+            <type>Film</type>
+            <majorPrereqs>
+                <prereq>Iron Man</prereq>
+                <prereq>Pepper Potts</prereq>
+            </majorPrereqs>
+            <minorPrereqs>
+                <media>Iron Man</media>
+            </minorPrereqs>
+        </media>
+        <media>
+            <title>Thor</title>
+            <type>Film</type>
+            <majorPrereqs></majorPrereqs>
+            <minorPrereqs></minorPrereqs>
+        </media>
+        <media>
+            <title>Captain America: The First Avenger</title>
+            <type>Film</type>
+            <majorPrereqs></majorPrereqs>
+            <minorPrereqs></minorPrereqs>
+        </media>
+        <media>
+            <title>The Avengers</title>
+            <type>Film</type>
+            <majorPrereqs>
+                <prereq>Iron Man</prereq>
+                <prereq>Captain America</prereq>
+                <prereq>Hulk</prereq>
+                <prereq>Thor</prereq>
+                <prereq>Nick Fury</prereq>
+                <prereq>Loki</prereq>
+            </majorPrereqs>
+            <minorPrereqs>
+                <prereq>Black Widow</prereq>
+                <prereq>Phil Coulson</prereq>
+            </minorPrereqs>
+        </media>
+        <media>
+            <title>Iron Man 3</title>
+            <type>Film</type>
+            <majorPrereqs>
+                <prereq>Iron Man</prereq>
+                <prereq>Pepper Potts</prereq>
+                <prereq>War Machine</prereq>
+            </majorPrereqs>
+            <minorPrereqs>
+                <media>Iron Man</media>
+            </minorPrereqs>
+        </media>
+        <media>
+            <title>Thor: The Dark World</title>
+            <type>Film</type>
+            <majorPrereqs>
+                <media>Thor</media>
+            </majorPrereqs>
+            <minorPrereqs></minorPrereqs>
+        </media>
+        <media>
+            <title>Captain America: The Winter Soldier</title>
+            <type>Film</type>
+            <majorPrereqs>
+                <media>Captain America: The First Avenger</media>
+                <prereq>S.H.I.E.L.D.</prereq>
+                <prereq>Nick Fury</prereq>
+            </majorPrereqs>
+            <minorPrereqs>
+                <prereq>Black Widow</prereq>
+            </minorPrereqs>
+        </media>
+        <media>
+            <title>Guardians of the Galaxy</title>
+            <type>Film</type>
+            <majorPrereqs></majorPrereqs>
+            <minorPrereqs></minorPrereqs>
+        </media>
+        <media>
+            <title>Avengers: Age of Ultron</title>
+            <type>Film</type>
+            <majorPrereqs>
+                <prereq>Avengers</prereq>
+                <prereq>Iron Man</prereq>
+                <prereq>Hulk</prereq>
+                <prereq>Captain America</prereq>
+            </majorPrereqs>
+            <minorPrereqs>
+                <media>Captain America: The Winter Soldier</media>
+                <prereq>Thor</prereq>
+                <prereq>Hawkeye</prereq>
+            </minorPrereqs>
+        </media>
+        <media>
+            <title>Ant-Man</title>
+            <type>Film</type>
+            <majorPrereqs></majorPrereqs>
+            <minorPrereqs>
+                <prereq>Avengers</prereq>
+            </minorPrereqs>
+        </media>
+    </mediaData>
+    <prereqData>
+        <prereq>
+            <title>Iron Man</title>
+            <appearances>
+                <media>Iron Man</media>
+                <media>Iron Man 2</media>
+                <media>The Avengers</media>
+                <media>Iron Man 3</media>
+            </appearances>
+        </prereq>
+        <prereq>
+            <title>Pepper Potts</title>
+            <appearances>
+                <media>Iron Man</media>
+                <media>Iron Man 2</media>
+                <media>Iron Man 3</media>
+            </appearances>
+        </prereq>
+        <prereq>
+            <title>Phil Coulson</title>
+            <appearances>
+                <media>Iron Man</media>
+                <media>Iron Man 2</media>
+                <media>Thor</media>
+                <media>The Avengers</media>
+            </appearances>
+        </prereq>
+        <prereq>
+            <title>Hulk</title>
+            <appearances>
+                <media>The Incredible Hulk</media>
+                <media>The Avengers</media>
+            </appearances>
+        </prereq>
+        <prereq>
+            <title>Black Widow</title>
+            <appearances>
+                <media>Iron Man 2</media>
+                <media>The Avengers</media>
+            </appearances>
+        </prereq>
+        <prereq>
+            <title>Nick Fury</title>
+            <appearances>
+                <media>Iron Man 2</media>
+                <media>The Avengers</media>
+            </appearances>
+        </prereq>
+        <prereq>
+            <title>War Machine</title>
+            <appearances>
+                <media>Iron Man 2</media>
+                <media>Iron Man 3</media>
+            </appearances>
+        </prereq>
+        <prereq>
+            <title>Thor</title>
+            <appearances>
+                <media>Thor</media>
+                <media>The Avengers</media>
+                <media>Thor: The Dark World</media>
+            </appearances>
+        </prereq>
+        <prereq>
+            <title>Loki</title>
+            <appearances>
+                <media>Thor</media>
+                <media>The Avengers</media>
+                <media>Thor: The Dark World</media>
+            </appearances>
+        </prereq>
+        <prereq>
+            <title>Captain America</title>
+            <appearances>
+                <media>Captain America</media>
+                <media>The Avengers</media>
+            </appearances>
+        </prereq>
+        <prereq>
+            <title>Avengers</title>
+            <appearances>
+                <media>The Avengers</media>
+                <media>Avengers: Age of Ultron</media>
+            </appearances>
+        </prereq>
+        <prereq>
+            <title>S.H.I.E.L.D.</title>
+            <appearances>
+                <media>The Avengers</media>
+                <media>Captain America: The Winter Soldier</media>
+            </appearances>
+        </prereq>
+        <prereq>
+            <title>Hawkeye</title>
+            <appearances>
+                <media>The Avengers</media>
+                <media>Avengers: Age of Ultron</media>
+            </appearances>
+        </prereq>
+    </prereqData>
+</data>
+`;
+
+const inputWatchedForm = document.querySelector("#input-watched-form");
+
+let data, mediaData;
+
+function loadData() {
+    data = new DOMParser().parseFromString(XMLData, "text/xml");
+    mediaData = data.querySelector("mediaData").children;
+}
+
+function createForm() {
+    if(mediaData.length > 0) {
+        for(media of mediaData) {
+            let mediaTitle = media.querySelector("title").textContent;
+            let mediaType = media.querySelector("type").textContent;
+
+            let checkboxDiv = document.createElement("div");
+            inputWatchedForm.appendChild(checkboxDiv);
+            
+            let checkbox = document.createElement("input");
+            checkbox.type = "checkbox";
+            checkbox.setAttribute("id", mediaTitle);
+            checkbox.checked = (localStorage.getItem(checkbox.getAttribute("id")) == "true");
+            checkboxDiv.appendChild(checkbox);
+
+            let checkboxLabel = document.createElement("label");
+            checkboxLabel.setAttribute("for", mediaTitle);
+            checkboxLabel.textContent = mediaTitle + " (" + mediaType + ")";
+            checkboxDiv.appendChild(checkboxLabel);
+            
+            checkbox.addEventListener("click", function() {
+                for(let currentChild of inputWatchedForm.children) {
+                    currentCheckbox = currentChild.children[0];
+                    localStorage.setItem(currentCheckbox.getAttribute("id"), currentCheckbox.checked);
+                }
+            });
+        }
+    }
+    else {
+        let errorMessage = document.createElement("b");
+        errorMessage.textContent = "Error: we could not access the media list."
+        inputWatchedForm.appendChild(errorMessage);
+    }
+}
+
+loadData();
+createForm();
