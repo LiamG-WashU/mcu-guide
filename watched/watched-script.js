@@ -16,7 +16,8 @@ async function fetchData() {
     }
 }
 
-function createForm() {
+async function createForm() {
+    await fetchData();
     if(mediaData.length > 0) {
         for(media of mediaData) {
             let mediaTitle = media.querySelector("title").textContent;
@@ -51,5 +52,4 @@ function createForm() {
     }
 }
 
-await fetchData();
 createForm();

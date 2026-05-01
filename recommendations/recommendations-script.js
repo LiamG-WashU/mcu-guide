@@ -20,7 +20,8 @@ async function fetchData() {
     }
 }
 
-function getRecommendations() {
+async function getRecommendations() {
+    await fetchData()
     if(mediaData.length > 0) {
         for(media of mediaData) {
             let mediaTitle = media.querySelector("title").textContent;
@@ -72,5 +73,4 @@ function prereqSatisfied(prereq) {
     return false;
 }
 
-await fetchData();
 getRecommendations();
