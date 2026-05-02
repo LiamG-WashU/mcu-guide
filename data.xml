@@ -144,15 +144,15 @@
         <media>
             <title>Captain America: Civil War</title>
             <type>Film</type>
-            <majorprereqs>
+            <majorPrereqs>
                 <media>Captain America: The Winter Soldier</media>
                 <prereq>Avengers</prereq>
                 <prereq>Iron Man</prereq>
-            </majorprereqs>
-            <minorprereqs>
+            </majorPrereqs>
+            <minorPrereqs>
                 <media>Avengers: Age of Ultron</media>
                 <prereq>Ant-Man</prereq>
-            </minorprereqs>
+            </minorPrereqs>
         </media>
         <media>
             <title>Luke Cage</title>
@@ -163,8 +163,8 @@
         <media>
             <title>Doctor Strange</title>
             <type>Film</type>
-            <majorprereqs></majorprereqs>
-            <minorprereqs></minorprereqs>
+            <majorPrereqs></majorPrereqs>
+            <minorPrereqs></minorPrereqs>
         </media>
         <media>
             <title>Iron Fist</title>
@@ -175,19 +175,19 @@
         <media>
             <title>Guardians of the Galaxy Vol. 2</title>
             <type>Film</type>
-            <majorprereqs>
+            <majorPrereqs>
                 <media>Guardians of the Galaxy</media>
-            </majorprereqs>
-            <minorprereqs></minorprereqs>
+            </majorPrereqs>
+            <minorPrereqs></minorPrereqs>
         </media>
         <media>
             <title>Spider-Man: Homecoming</title>
             <type>Film</type>
-            <majorprereqs></majorprereqs>
-            <minorprereqs>
+            <majorPrereqs></majorPrereqs>
+            <minorPrereqs>
                 <prereq>Spider-Man</prereq>
                 <prereq>Iron Man</prereq>
-            </minorprereqs>
+            </minorPrereqs>
         </media>
         <media>
             <title>The Defenders</title>
@@ -210,15 +210,15 @@
         <media>
             <title>Thor: Ragnarok</title>
             <type>Film</type>
-            <majorprereqs>
+            <majorPrereqs>
                 <prereq>Thor</prereq>
                 <prereq>Loki</prereq>
                 <prereq>Hulk</prereq>
                 <prereq>Asgard</prereq>
-            </majorprereqs>
-            <minorprereqs>
+            </majorPrereqs>
+            <minorPrereqs>
                 <media>Thor: The Dark World</media>
-            </minorprereqs>
+            </minorPrereqs>
         </media>
         <media>
             <title>The Punisher</title>
@@ -239,15 +239,15 @@
         <media>
             <title>Black Panther</title>
             <type>Film</type>
-            <majorprereqs></majorprereqs>
-            <minorprereqs>
+            <majorPrereqs></majorPrereqs>
+            <minorPrereqs>
                 <prereq>Black Panther</prereq>
-            </minorprereqs>
+            </minorPrereqs>
         </media>
         <media>
             <title>Avengers: Infinity War</title>
             <type>Film</type>
-            <majorprereqs>
+            <majorPrereqs>
                 <prereq>Avengers</prereq>
                 <prereq>Iron Man</prereq>
                 <prereq>Guardians of the Galaxy</prereq>
@@ -256,12 +256,12 @@
                 <prereq>Hulk</prereq>
                 <prereq>Doctor Strange</prereq>
                 <prereq>Black Panther</prereq>
-            </majorprereqs>
-            <minorprereqs>
+            </majorPrereqs>
+            <minorPrereqs>
                 <media>Captain America: Civil War</media>
                 <media>Thor: Ragnarok</media>
                 <prereq>Wakanda</prereq>
-            </minorprereqs>
+            </minorPrereqs>
         </media>
         <media>
             <title>Cloak &amp; Dagger</title>
@@ -272,45 +272,45 @@
         <media>
             <title>Ant-Man and the Wasp</title>
             <type>Film</type>
-            <majorprereqs>
+            <majorPrereqs>
                 <prereq>Ant-Man</prereq>
                 <prereq>Pym family</prereq>
-            </majorprereqs>
-            <minorprereqs>
+            </majorPrereqs>
+            <minorPrereqs>
                 <prereq>Captain America: Civil War</prereq>
-            </minorprereqs>
+            </minorPrereqs>
         </media>
         <media>
             <title>Captain Marvel</title>
             <type>Film</type>
-            <majorprereqs></majorprereqs>
-            <minorprereqs></minorprereqs>
+            <majorPrereqs></majorPrereqs>
+            <minorPrereqs></minorPrereqs>
         </media>
         <media>
             <title>Avengers: Endgame</title>
             <type>Film</type>
-            <majorprereqs>
+            <majorPrereqs>
                 <media>Avengers: Infinity War</media>
                 <media>The Avengers</media>
                 <prereq>Ant-Man</prereq>
                 <prereq>Hawkeye</prereq>
-            </majorprereqs>
-            <minorprereqs>
+            </majorPrereqs>
+            <minorPrereqs>
                 <media>Ant-Man and the Wasp</media>
                 <prereq>Captain Marvel</prereq>
-            </minorprereqs>
+            </minorPrereqs>
         </media>
         <media>
             <title>Spider-Man: Far From Home</title>
             <type>Film</type>
-            <majorprereqs>
+            <majorPrereqs>
                 <prereq>Spider-Man</prereq>
                 <prereq>Peter's friends</prereq>
                 <prereq>Nick Fury</prereq>
-            </majorprereqs>
-            <minorprereqs>
+            </majorPrereqs>
+            <minorPrereqs>
                 <media>Avengers: Endgame</media>
-            </minorprereqs>
+            </minorPrereqs>
         </media>
     </mediaData>
     <prereqData>
