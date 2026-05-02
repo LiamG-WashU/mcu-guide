@@ -1,4 +1,4 @@
-<!-- Temporary data just for testing: this is Phase One & Two only! -->
+<!-- Incomplete data just for testing: only updated through 2020! -->
 <data>
     <mediaData>
         <media>
@@ -65,6 +65,14 @@
             </minorPrereqs>
         </media>
         <media>
+            <title>Agents of S.H.I.E.L.D.</title>
+            <type>Series</type>
+            <majorPrereqs>
+                <prereq>S.H.I.E.L.D.</prereq>
+            </majorPrereqs>
+            <minorPrereqs></minorPrereqs>
+        </media>
+        <media>
             <title>Thor: The Dark World</title>
             <type>Film</type>
             <majorPrereqs>
@@ -91,6 +99,20 @@
             <minorPrereqs></minorPrereqs>
         </media>
         <media>
+            <title>Agent Carter</title>
+            <type>Series</type>
+            <majorPrereqs></majorPrereqs>
+            <minorPrereqs>
+                <media>Captain America: The First Avenger</media>
+            </minorPrereqs>
+        </media>
+        <media>
+            <title>Daredevil</title>
+            <type>Series</type>
+            <majorPrereqs></majorPrereqs>
+            <minorPrereqs></minorPrereqs>
+        </media>
+        <media>
             <title>Avengers: Age of Ultron</title>
             <type>Film</type>
             <majorPrereqs>
@@ -113,6 +135,183 @@
                 <prereq>Avengers</prereq>
             </minorPrereqs>
         </media>
+        <media>
+            <title>Jessica Jones</title>
+            <type>Series</type>
+            <majorPrereqs></majorPrereqs>
+            <minorPrereqs></minorPrereqs>
+        </media>
+        <media>
+            <title>Captain America: Civil War</title>
+            <type>Film</type>
+            <majorprereqs>
+                <media>Captain America: The Winter Soldier</media>
+                <prereq>Avengers</prereq>
+                <prereq>Iron Man</prereq>
+            </majorprereqs>
+            <minorprereqs>
+                <media>Avengers: Age of Ultron</media>
+                <prereq>Ant-Man</prereq>
+            </minorprereqs>
+        </media>
+        <media>
+            <title>Luke Cage</title>
+            <type>Series</type>
+            <majorPrereqs></majorPrereqs>
+            <minorPrereqs></minorPrereqs>
+        </media>
+        <media>
+            <title>Doctor Strange</title>
+            <type>Film</type>
+            <majorprereqs></majorprereqs>
+            <minorprereqs></minorprereqs>
+        </media>
+        <media>
+            <title>Iron Fist</title>
+            <type>Series</type>
+            <majorPrereqs></majorPrereqs>
+            <minorPrereqs></minorPrereqs>
+        </media>
+        <media>
+            <title>Guardians of the Galaxy Vol. 2</title>
+            <type>Film</type>
+            <majorprereqs>
+                <media>Guardians of the Galaxy</media>
+            </majorprereqs>
+            <minorprereqs></minorprereqs>
+        </media>
+        <media>
+            <title>Spider-Man: Homecoming</title>
+            <type>Film</type>
+            <majorprereqs></majorprereqs>
+            <minorprereqs>
+                <prereq>Spider-Man</prereq>
+                <prereq>Iron Man</prereq>
+            </minorprereqs>
+        </media>
+        <media>
+            <title>The Defenders</title>
+            <type>Series</type>
+            <majorPrereqs>
+                <media>Jessica Jones</media>
+                <media>Iron Fist</media>
+                <prereq>Daredevil</prereq>
+            </majorPrereqs>
+            <minorPrereqs>
+                <media>Luke Cage</media>
+            </minorPrereqs>
+        </media>
+        <media>
+            <title>Inhumans</title>
+            <type>Series</type>
+            <majorPrereqs></majorPrereqs>
+            <minorPrereqs></minorPrereqs>
+        </media>
+        <media>
+            <title>Thor: Ragnarok</title>
+            <type>Film</type>
+            <majorprereqs>
+                <prereq>Thor</prereq>
+                <prereq>Loki</prereq>
+                <prereq>Hulk</prereq>
+                <prereq>Asgard</prereq>
+            </majorprereqs>
+            <minorprereqs>
+                <media>Thor: The Dark World</media>
+            </minorprereqs>
+        </media>
+        <media>
+            <title>The Punisher</title>
+            <type>Series</type>
+            <majorPrereqs>
+                <media>Daredevil</media>
+            </majorPrereqs>
+            <minorPrereqs></minorPrereqs>
+        </media>
+        <media>
+            <title>Runaways</title>
+            <type>Series</type>
+            <majorPrereqs></majorPrereqs>
+            <minorPrereqs>
+                <media>Cloak &amp; Dagger</media>
+            </minorPrereqs>
+        </media>
+        <media>
+            <title>Black Panther</title>
+            <type>Film</type>
+            <majorprereqs></majorprereqs>
+            <minorprereqs>
+                <prereq>Black Panther</prereq>
+            </minorprereqs>
+        </media>
+        <media>
+            <title>Avengers: Infinity War</title>
+            <type>Film</type>
+            <majorprereqs>
+                <prereq>Avengers</prereq>
+                <prereq>Iron Man</prereq>
+                <prereq>Guardians of the Galaxy</prereq>
+                <prereq>Thor</prereq>
+                <prereq>Spider-Man</prereq>
+                <prereq>Hulk</prereq>
+                <prereq>Doctor Strange</prereq>
+                <prereq>Black Panther</prereq>
+            </majorprereqs>
+            <minorprereqs>
+                <media>Captain America: Civil War</media>
+                <media>Thor: Ragnarok</media>
+                <prereq>Wakanda</prereq>
+            </minorprereqs>
+        </media>
+        <media>
+            <title>Cloak &amp; Dagger</title>
+            <type>Series</type>
+            <majorPrereqs></majorPrereqs>
+            <minorPrereqs></minorPrereqs>
+        </media>
+        <media>
+            <title>Ant-Man and the Wasp</title>
+            <type>Film</type>
+            <majorprereqs>
+                <prereq>Ant-Man</prereq>
+                <prereq>Pym family</prereq>
+            </majorprereqs>
+            <minorprereqs>
+                <prereq>Captain America: Civil War</prereq>
+            </minorprereqs>
+        </media>
+        <media>
+            <title>Captain Marvel</title>
+            <type>Film</type>
+            <majorprereqs></majorprereqs>
+            <minorprereqs></minorprereqs>
+        </media>
+        <media>
+            <title>Avengers: Endgame</title>
+            <type>Film</type>
+            <majorprereqs>
+                <media>Avengers: Infinity War</media>
+                <media>The Avengers</media>
+                <prereq>Ant-Man</prereq>
+                <prereq>Hawkeye</prereq>
+            </majorprereqs>
+            <minorprereqs>
+                <media>Ant-Man and the Wasp</media>
+                <prereq>Captain Marvel</prereq>
+            </minorprereqs>
+        </media>
+        <media>
+            <title>Spider-Man: Far From Home</title>
+            <type>Film</type>
+            <majorprereqs>
+                <prereq>Spider-Man</prereq>
+                <prereq>Peter's friends</prereq>
+                <prereq>Nick Fury</prereq>
+            </majorprereqs>
+            <minorprereqs>
+                <media>Avengers: Endgame</media>
+            </minorprereqs>
+        </media>
     </mediaData>
     <prereqData>
         <prereq>
@@ -122,6 +321,11 @@
                 <media>Iron Man 2</media>
                 <media>The Avengers</media>
                 <media>Iron Man 3</media>
+                <media>Avengers: Age of Ultron</media>
+                <media>Captain America: Civil War</media>
+                <media>Spider-Man: Homecoming</media>
+                <media>Avengers: Infinity War</media>
+                <media>Avengers: Endgame</media>
             </appearances>
         </prereq>
         <prereq>
@@ -146,6 +350,8 @@
             <appearances>
                 <media>The Incredible Hulk</media>
                 <media>The Avengers</media>
+                <media>Avengers: Age of Ultron</media>
+                <media>Thor: Ragnarok</media>
             </appearances>
         </prereq>
         <prereq>
@@ -153,6 +359,10 @@
             <appearances>
                 <media>Iron Man 2</media>
                 <media>The Avengers</media>
+                <media>Captain America: The Winter Soldier</media>
+                <media>Avengers: Age of Ultron</media>
+                <media>Captain America: Civil War</media>
+                <media>Avengers: Endgame</media>
             </appearances>
         </prereq>
         <prereq>
@@ -160,6 +370,8 @@
             <appearances>
                 <media>Iron Man 2</media>
                 <media>The Avengers</media>
+                <media>Captain America: The Winter Soldier</media>
+                <media>Spider-Man: Far From Home</media>
             </appearances>
         </prereq>
         <prereq>
@@ -167,6 +379,8 @@
             <appearances>
                 <media>Iron Man 2</media>
                 <media>Iron Man 3</media>
+                <media>Captain America: Civil War</media>
+                <media>Avengers: Endgame</media>
             </appearances>
         </prereq>
         <prereq>
@@ -175,6 +389,10 @@
                 <media>Thor</media>
                 <media>The Avengers</media>
                 <media>Thor: The Dark World</media>
+                <media>Avengers: Age of Ultron</media>
+                <media>Thor: Ragnarok</media>
+                <media>Avengers: Infinity War</media>
+                <media>Avengers: Endgame</media>
             </appearances>
         </prereq>
         <prereq>
@@ -183,6 +401,15 @@
                 <media>Thor</media>
                 <media>The Avengers</media>
                 <media>Thor: The Dark World</media>
+                <media>Thor: Ragnarok</media>
+            </appearances>
+        </prereq>
+        <prereq>
+            <title>Asgard</title>
+            <appearances>
+                <media>Thor</media>
+                <media>Thor: The Dark World</media>
+                <media>Thor: Ragnarok</media>
             </appearances>
         </prereq>
         <prereq>
@@ -190,6 +417,10 @@
             <appearances>
                 <media>Captain America: The First Avenger</media>
                 <media>The Avengers</media>
+                <media>Captain America: The Winter Soldier</media>
+                <media>Avengers: Age of Ultron</media>
+                <media>Captain America: Civil War</media>
+                <media>Avengers: Endgame</media>
             </appearances>
         </prereq>
         <prereq>
@@ -197,12 +428,15 @@
             <appearances>
                 <media>The Avengers</media>
                 <media>Avengers: Age of Ultron</media>
+                <media>Captain America: Civil War</media>
+                <media>Avengers: Endgame</media>
             </appearances>
         </prereq>
         <prereq>
             <title>S.H.I.E.L.D.</title>
             <appearances>
                 <media>The Avengers</media>
+                <media>Agents of S.H.I.E.L.D.</media>
                 <media>Captain America: The Winter Soldier</media>
             </appearances>
         </prereq>
@@ -211,6 +445,81 @@
             <appearances>
                 <media>The Avengers</media>
                 <media>Avengers: Age of Ultron</media>
+                <media>Avengers: Endgame</media>
+            </appearances>
+        </prereq>
+        <prereq>
+            <title>Guardians of the Galaxy</title>
+            <appearances>
+                <media>Guardians of the Galaxy</media>
+                <media>Guardians of the Galaxy Vol. 2</media>
+            </appearances>
+        </prereq>
+        <prereq>
+            <title>Daredevil</title>
+            <appearances>
+                <media>Daredevil</media>
+                <media>The Defenders</media>
+            </appearances>
+        </prereq>
+        <prereq>
+            <title>Ant-Man</title>
+            <appearances>
+                <media>Ant-Man</media>
+                <media>Ant-Man and the Wasp</media>
+                <media>Avengers: Endgame</media>
+            </appearances>
+        </prereq>
+        <prereq>
+            <title>Pym family</title>
+            <appearances>
+                <media>Ant-Man</media>
+                <media>Ant-Man and the Wasp</media>
+            </appearances>
+        </prereq>
+        <prereq>
+            <title>Spider-Man</title>
+            <appearances>
+                <media>Captain America: Civil War</media>
+                <media>Spider-Man: Homecoming</media>
+                <media>Avengers: Infinity War</media>
+                <media>Spider-Man: Far From Home</media>
+            </appearances>
+        </prereq>
+        <prereq>
+            <title>Peter's friends</title>
+            <appearances>
+                <media>Spider-Man: Homecoming</media>
+                <media>Spider-Man: Far From Home</media>
+            </appearances>
+        </prereq>
+        <prereq>
+            <title>Black Panther</title>
+            <appearances>
+                <media>Captain America: Civil War</media>
+                <media>Black Panther</media>
+                <media>Avengers: Infinity War</media>
+            </appearances>
+        </prereq>
+        <prereq>
+            <title>Doctor Strange</title>
+            <appearances>
+                <media>Doctor Strange</media>
+                <media>Avengers: Infinity War</media>
+            </appearances>
+        </prereq>
+        <prereq>
+            <title>Wakanda</title>
+            <appearances>
+                <media>Black Panther</media>
+                <media>Avengers: Infinity War</media>
+            </appearances>
+        </prereq>
+        <prereq>
+            <title>Captain Marvel</title>
+            <appearances>
+                <media>Captain Marvel</media>
+                <media>Avengers: Endgame</media>
             </appearances>
         </prereq>
     </prereqData>
