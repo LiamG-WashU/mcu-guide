@@ -1,4 +1,5 @@
-const inputWatchedForm = document.querySelector("#input-watched-form");
+const inputWatchedFilmsForm = document.querySelector("#input-watched-films-form");
+const inputWatchedSeriesForm = document.querySelector("#input-watched-series-form");
 
 let data, mediaData;
 
@@ -19,6 +20,7 @@ async function createForm() {
                 let mediaType = media.querySelector("type").textContent;
 
                 let checkboxDiv = document.createElement("div");
+                let inputWatchedForm = (mediaType == "Film") ? inputWatchedFilmsForm : inputWatchedSeriesForm;
                 inputWatchedForm.appendChild(checkboxDiv);
                 
                 let checkbox = document.createElement("input");
@@ -29,7 +31,7 @@ async function createForm() {
 
                 let checkboxLabel = document.createElement("label");
                 checkboxLabel.setAttribute("for", mediaTitle);
-                checkboxLabel.textContent = mediaTitle + " (" + mediaType + ")";
+                checkboxLabel.textContent = mediaTitle;
                 checkboxDiv.appendChild(checkboxLabel);
                 
                 checkbox.addEventListener("click", function() {

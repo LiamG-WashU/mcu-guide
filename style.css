@@ -5,7 +5,6 @@
 body {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     min-height: 100vh;
     margin: 0;
     padding: 0;
@@ -30,6 +29,25 @@ header {
 main {
     flex: 1;
     padding: 1vh;
+}
+
+.horizontal-container {
+    display: flex;
+    flex-direction: row;
+    gap: 5vh;
+}
+
+.heading {
+    font-size: larger;
+}
+
+.media-list {
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 1vh;
+    padding-right: 1vh;
+    list-style: none;
 }
 
 footer {

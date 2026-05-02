@@ -1,7 +1,12 @@
-const recommendedMediaList = document.querySelector("#recommended-media-list");
-const unrecommendedMediaList = document.querySelector("#unrecommended-media-list");
-const veryUnrecommendedMediaList = document.querySelector("#very-unrecommended-media-list");
-const alreadyWatchedMediaList = document.querySelector("#already-watched-media-list");
+const recommendedFilmsList = document.querySelector("#recommended-films-list");
+const unrecommendedFilmsList = document.querySelector("#unrecommended-films-list");
+const veryUnrecommendedFilmsList = document.querySelector("#very-unrecommended-films-list");
+const alreadyWatchedFilmsList = document.querySelector("#already-watched-films-list");
+const recommendedSeriesList = document.querySelector("#recommended-series-list");
+const unrecommendedSeriesList = document.querySelector("#unrecommended-series-list");
+const veryUnrecommendedSeriesList = document.querySelector("#very-unrecommended-series-list");
+const alreadyWatchedSeriesList = document.querySelector("#already-watched-series-list");
+const mediaLists = document.querySelectorAll(".media-list");
 
 let data, mediaData, prereqData;
 
@@ -21,28 +26,47 @@ async function getRecommendations() {
             for(media of mediaData) {
                 let mediaTitle = media.querySelector("title").textContent;
                 let mediaType = media.querySelector("type").textContent;
-                let mediaElement = document.createElement("ul");
-                mediaElement.textContent = mediaTitle + " (" + mediaType + ")";
+                let mediaElement = document.createElement("li");
+                mediaElement.textContent = mediaTitle;
 
-                if(localStorage.getItem(mediaTitle) == "true") alreadyWatchedMediaList.appendChild(mediaElement);
+                if(localStorage.getItem(mediaTitle) == "true") {
+                    let mediaList = ((mediaType == "Film") ? (alreadyWatchedFilmsList) : (alreadyWatchedSeriesList));
+                    mediaList.appendChild(mediaElement);
+                }
                 else {
                     let hasMajorPrereq = false;
                     for(let prereq of media.querySelector("majorPrereqs").children) {
                         if(!prereqSatisfied(prereq)) hasMajorPrereq = true;
                     }
-                    if(hasMajorPrereq) veryUnrecommendedMediaList.appendChild(mediaElement);
+                    if(hasMajorPrereq) {
+                        let mediaList = ((mediaType == "Film") ? (veryUnrecommendedFilmsList) : (veryUnrecommendedSeriesList));
+                        mediaList.appendChild(mediaElement);
+                    }
                     else {
                         let hasMinorPrereq = false;
                         for(let prereq of media.querySelector("minorPrereqs").children) {
                             if(!prereqSatisfied(prereq)) hasMinorPrereq = true;
                         }
-                        if(hasMinorPrereq) unrecommendedMediaList.appendChild(mediaElement);
-                        else recommendedMediaList.appendChild(mediaElement);
+                        if(hasMinorPrereq) {
+                            let mediaList = ((mediaType == "Film") ? (unrecommendedFilmsList) : (unrecommendedSeriesList));
+                            mediaList.appendChild(mediaElement);
+                        }
+                        else {
+                            let mediaList = ((mediaType == "Film") ? (recommendedFilmsList) : (recommendedSeriesList));
+                            mediaList.appendChild(mediaElement);
+                        }
                     }
                 }
             }
         }
         else throw new Error("We could not access the media list.");
+        for(let list of mediaLists) {
+            if(list.children.length == 0) {
+                let listEmptyMessage = document.createElement("span");
+                listEmptyMessage.textContent = "None";
+                list.appendChild(listEmptyMessage);
+            }
+        }
     }
     catch(error) {
         console.error(error);
