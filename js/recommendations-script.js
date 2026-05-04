@@ -13,7 +13,7 @@ const mediaLists = document.querySelectorAll(".media-list");
 let data, mediaData, prereqData;
 
 async function fetchData() {
-    let response = await fetch("data.xml");
+    let response = await fetch("./data.xml");
     if(!response.ok) throw new Error("Failed to connect to the server!");
     let responseXML = await response.text();
     data = new DOMParser().parseFromString(responseXML, "text/xml");
