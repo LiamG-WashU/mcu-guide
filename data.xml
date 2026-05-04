@@ -1,45 +1,79 @@
 <data>
     <mediaData>
         <media>
-            <title>Blade film series</title>
+            <title>Blade</title>
             <type>Multiversal</type>
             <majorPrereqs></majorPrereqs>
             <minorPrereqs></minorPrereqs>
         </media>
         <media>
-            <title>X-Men film series</title>
+            <title>X-Men</title>
             <type>Multiversal</type>
             <majorPrereqs></majorPrereqs>
             <minorPrereqs></minorPrereqs>
         </media>
         <media>
-            <title>Original Spider-Man film series</title>
+            <title>Spider-Man</title>
             <type>Multiversal</type>
             <majorPrereqs></majorPrereqs>
             <minorPrereqs></minorPrereqs>
         </media>
         <media>
-            <title>Daredevil film</title>
+            <title>Daredevil (film)</title>
             <type>Multiversal</type>
             <majorPrereqs></majorPrereqs>
             <minorPrereqs></minorPrereqs>
         </media>
         <media>
-            <title>Original Fantastic Four film series</title>
+            <title>Spider-Man 2</title>
+            <type>Multiversal</type>
+            <majorPrereqs>
+                <media>Spider-Man</media>
+            </majorPrereqs>
+            <minorPrereqs></minorPrereqs>
+        </media>
+        <media>
+            <title>Spider-Man 3</title>
+            <type>Multiversal</type>
+            <majorPrereqs>
+                <media>Spider-Man 2</media>
+            </majorPrereqs>
+            <minorPrereqs></minorPrereqs>
+        </media>
+        <media>
+            <title>Fantastic Four</title>
             <type>Multiversal</type>
             <majorPrereqs></majorPrereqs>
             <minorPrereqs></minorPrereqs>
         </media>
         <media>
-            <title>Amazing Spider-Man film series</title>
+            <title>The Amazing Spider-Man</title>
             <type>Multiversal</type>
             <majorPrereqs></majorPrereqs>
             <minorPrereqs></minorPrereqs>
         </media>
         <media>
-            <title>Deadpool film series</title>
+            <title>The Amazing Spider-Man 2</title>
+            <type>Multiversal</type>
+            <majorPrereqs>
+                <media>The Amazing Spider-Man</media>
+            </majorPrereqs>
+            <minorPrereqs></minorPrereqs>
+        </media>
+        <media>
+            <title>Deadpool</title>
             <type>Multiversal</type>
             <majorPrereqs></majorPrereqs>
+            <minorPrereqs>
+                <media>X-Men</media>
+            </minorPrereqs>
+        </media>
+        <media>
+            <title>Logan</title>
+            <type>Multiversal</type>
+            <majorPrereqs>
+                <media>X-Men</media>
+            </majorPrereqs>
             <minorPrereqs></minorPrereqs>
         </media>
         <media>
@@ -423,14 +457,19 @@
             <title>Spider-Man: No Way Home</title>
             <type>Film</type>
             <majorPrereqs>
-                <media>Original Spider-Man film series</media>
-                <media>Amazing Spider-Man film series</media>
                 <prereq>Spider-Man</prereq>
                 <prereq>Peter's friends</prereq>
                 <prereq>Doctor Strange</prereq>
+                <prereq>Original Spider-Man</prereq>
+                <prereq>Amazing Spider-Man</prereq>
             </majorPrereqs>
             <minorPrereqs>
                 <media>Spider-Man: Far From Home</media>
+                <media>Spider-Man</media>
+                <media>Spider-Man 2</media>
+                <media>Spider-Man 3</media>
+                <media>The Amazing Spider-Man</media>
+                <media>The Amazing Spider-Man 2</media>
             </minorPrereqs>
         </media>
         <media>
@@ -538,14 +577,15 @@
             <title>Deadpool &amp; Wolverine</title>
             <type>Film</type>
             <majorPrereqs>
-                <media>X-Men film series</media>
-                <media>Deadpool film series</media>
+                <media>Deadpool</media>
+                <media>X-Men</media>
+                <media>Logan</media>
                 <media>Loki</media>
             </majorPrereqs>
             <minorPrereqs>
-                <media>Original Fantastic Four film series</media>
-                <media>Blade film series</media>
-                <media>Daredevil film</media>
+                <media>Fantastic Four</media>
+                <media>Blade</media>
+                <media>Daredevil (film)</media>
             </minorPrereqs>
         </media>
         <media>
@@ -619,6 +659,21 @@
         </media>
     </mediaData>
     <prereqData>
+        <prereq>
+            <title>Original Spider-Man</title>
+            <appearances>
+                <media>Spider-Man</media>
+                <media>Spider-Man 2</media>
+                <media>Spider-Man 3</media>
+            </appearances>
+        </prereq>
+        <prereq>
+            <title>Amazing Spider-Man</title>
+            <appearances>
+                <media>The Amazing Spider-Man</media>
+                <media>The Amazing Spider-Man 2</media>
+            </appearances>
+        </prereq>
         <prereq>
             <title>Iron Man</title>
             <appearances>

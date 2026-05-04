@@ -7,6 +7,8 @@ const unrecommendedSeriesList = document.querySelector("#unrecommended-series-li
 const veryUnrecommendedSeriesList = document.querySelector("#very-unrecommended-series-list");
 const alreadyWatchedSeriesList = document.querySelector("#already-watched-series-list");
 const recommendedMultiversalsList = document.querySelector("#recommended-multiversals-list");
+const unrecommendedMultiversalsList = document.querySelector("#unrecommended-multiversals-list");
+const veryUnrecommendedMultiversalsList = document.querySelector("#very-unrecommended-multiversals-list");
 const alreadyWatchedMultiversalsList = document.querySelector("#already-watched-multiversals-list");
 const mediaLists = document.querySelectorAll(".media-list");
 
@@ -42,7 +44,8 @@ async function getRecommendations() {
                         if(!prereqSatisfied(prereq)) hasMajorPrereq = true;
                     }
                     if(hasMajorPrereq) {
-                        let mediaList = ((mediaType == "Film") ? (veryUnrecommendedFilmsList) : (veryUnrecommendedSeriesList));
+                        let mediaList = (mediaType == "Film") ? veryUnrecommendedFilmsList : (
+                        (mediaType == "Series") ? veryUnrecommendedSeriesList : veryUnrecommendedMultiversalsList);
                         mediaList.appendChild(mediaElement);
                     }
                     else {
@@ -51,7 +54,8 @@ async function getRecommendations() {
                             if(!prereqSatisfied(prereq)) hasMinorPrereq = true;
                         }
                         if(hasMinorPrereq) {
-                            let mediaList = ((mediaType == "Film") ? (unrecommendedFilmsList) : (unrecommendedSeriesList));
+                            let mediaList = (mediaType == "Film") ? unrecommendedFilmsList : (
+                            (mediaType == "Series") ? unrecommendedSeriesList : unrecommendedMultiversalsList);
                             mediaList.appendChild(mediaElement);
                         }
                         else {
