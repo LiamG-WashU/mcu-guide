@@ -1,6 +1,17 @@
-<!-- Incomplete data just for testing: only updated through 2022! -->
 <data>
     <mediaData>
+        <media>
+            <title>Blade film series</title>
+            <type>Multiversal</type>
+            <majorPrereqs></majorPrereqs>
+            <minorPrereqs></minorPrereqs>
+        </media>
+        <media>
+            <title>X-Men film series</title>
+            <type>Multiversal</type>
+            <majorPrereqs></majorPrereqs>
+            <minorPrereqs></minorPrereqs>
+        </media>
         <media>
             <title>Original Spider-Man film series</title>
             <type>Multiversal</type>
@@ -8,7 +19,25 @@
             <minorPrereqs></minorPrereqs>
         </media>
         <media>
+            <title>Daredevil film</title>
+            <type>Multiversal</type>
+            <majorPrereqs></majorPrereqs>
+            <minorPrereqs></minorPrereqs>
+        </media>
+        <media>
+            <title>Original Fantastic Four film series</title>
+            <type>Multiversal</type>
+            <majorPrereqs></majorPrereqs>
+            <minorPrereqs></minorPrereqs>
+        </media>
+        <media>
             <title>Amazing Spider-Man film series</title>
+            <type>Multiversal</type>
+            <majorPrereqs></majorPrereqs>
+            <minorPrereqs></minorPrereqs>
+        </media>
+        <media>
+            <title>Deadpool film series</title>
             <type>Multiversal</type>
             <majorPrereqs></majorPrereqs>
             <minorPrereqs></minorPrereqs>
@@ -452,11 +481,141 @@
             <title>The Guardians of the Galaxy Holiday Special</title>
             <type>Film</type>
             <majorPrereqs>
-                <prereq>Guardians of the Galaxy Vol. 2</prereq>
+                <media>Guardians of the Galaxy Vol. 2</media>
                 <media>Avengers: Infinity War</media>
                 <media>Avengers: Endgame</media>
             </majorPrereqs>
             <minorPrereqs></minorPrereqs>
+        </media>
+        <media>
+            <title>Ant-Man and the Wasp: Quantumania</title>
+            <type>Film</type>
+            <majorPrereqs>
+                <prereq>Ant-Man</prereq>
+                <prereq>Pym family</prereq>
+            </majorPrereqs>
+            <minorPrereqs>
+                <media>Avengers: Endgame</media>
+            </minorPrereqs>
+        </media>
+        <media>
+            <title>Guardians of the Galaxy Vol. 3</title>
+            <type>Film</type>
+            <majorPrereqs>
+                <media>Avengers: Infinity War</media>
+                <media>Avengers: Endgame</media>
+            </majorPrereqs>
+            <minorPrereqs></minorPrereqs>
+        </media>
+        <media>
+            <title>Secret Invasion</title>
+            <type>Series</type>
+            <majorPrereqs>
+                <media>Captain Marvel</media>
+            </majorPrereqs>
+            <minorPrereqs>
+                <prereq>War Machine</prereq>
+            </minorPrereqs>
+        </media>
+        <media>
+            <title>The Marvels</title>
+            <type>Film</type>
+            <majorPrereqs>
+                <media>Captain Marvel</media>
+                <media>Ms. Marvel</media>
+            </majorPrereqs>
+            <minorPrereqs>
+                <media>WandaVision</media>
+            </minorPrereqs>
+        </media>
+        <media>
+            <title>Echo</title>
+            <type>Series</type>
+            <majorPrereqs></majorPrereqs>
+            <minorPrereqs></minorPrereqs>
+        </media>
+        <media>
+            <title>Deadpool &amp; Wolverine</title>
+            <type>Film</type>
+            <majorPrereqs>
+                <media>X-Men film series</media>
+                <media>Deadpool film series</media>
+                <media>Loki</media>
+            </majorPrereqs>
+            <minorPrereqs>
+                <media>Original Fantastic Four film series</media>
+                <media>Blade film series</media>
+                <media>Daredevil film</media>
+            </minorPrereqs>
+        </media>
+        <media>
+            <title>Agatha All Along</title>
+            <type>Series</type>
+            <majorPrereqs>
+                <media>WandaVision</media>
+            </majorPrereqs>
+            <minorPrereqs></minorPrereqs>
+        </media>
+        <media>
+            <title>Captain America: Brave New World</title>
+            <type>Film</type>
+            <majorPrereqs>
+                <media>The Falcon and the Winter Soldier</media>
+                <media>The Incredible Hulk</media>
+            </majorPrereqs>
+            <minorPrereqs></minorPrereqs>
+        </media>
+        <media>
+            <title>Daredevil: Born Again</title>
+            <type>Series</type>
+            <majorPrereqs>
+                <media>Daredevil</media>
+            </majorPrereqs>
+            <minorPrereqs>
+                <prereq>Jessica Jones</prereq>
+            </minorPrereqs>
+        </media>
+        <media>
+            <title>Thunderbolts*</title>
+            <type>Film</type>
+            <majorPrereqs>
+                <media>Black Widow</media>
+                <prereq>Winter Soldier</prereq>
+            </majorPrereqs>
+            <minorPrereqs>
+                <media>The Falcon and the Winter Soldier</media>
+                <media>Ant-Man and the Wasp</media>
+            </minorPrereqs>
+        </media>
+        <media>
+            <title>Ironheart</title>
+            <type>Series</type>
+            <majorPrereqs></majorPrereqs>
+            <minorPrereqs>
+                <media>Black Panther: Wakanda Forever</media>
+            </minorPrereqs>
+        </media>
+        <media>
+            <title>The Fantastic Four: First Steps</title>
+            <type>Film</type>
+            <majorPrereqs></majorPrereqs>
+            <minorPrereqs></minorPrereqs>
+        </media>
+        <media>
+            <title>Eyes of Wakanda</title>
+            <type>Series</type>
+            <majorPrereqs></majorPrereqs>
+            <minorPrereqs>
+                <prereq>Wakanda</prereq>
+            </minorPrereqs>
+        </media>
+        <media>
+            <title>Wonder Man</title>
+            <type>Series</type>
+            <majorPrereqs></majorPrereqs>
+            <minorPrereqs>
+                <prereq>Trevor Slattery</prereq>
+            </minorPrereqs>
         </media>
     </mediaData>
     <prereqData>
@@ -519,6 +678,7 @@
                 <media>The Avengers</media>
                 <media>Captain America: The Winter Soldier</media>
                 <media>Spider-Man: Far From Home</media>
+                <media>Secret Invasion</media>
             </appearances>
         </prereq>
         <prereq>
@@ -585,6 +745,7 @@
                 <media>Captain America: The Winter Soldier</media>
                 <media>Captain America: Civil War</media>
                 <media>The Falcon and the Winter Soldier</media>
+                <media>Thunderbolts*</media>
             </appearances>
         </prereq>
         <prereq>
@@ -594,6 +755,14 @@
                 <media>Avengers: Age of Ultron</media>
                 <media>Captain America: Civil War</media>
                 <media>Avengers: Endgame</media>
+            </appearances>
+        </prereq>
+        <prereq>
+            <title>Trevor Slattery</title>
+            <appearances>
+                <media>Iron Man 3</media>
+                <media>Shang-Chi and the Legend of the Ten Rings</media>
+                <media>Wonder Man</media>
             </appearances>
         </prereq>
         <prereq>
@@ -620,6 +789,7 @@
                 <media>Guardians of the Galaxy Vol. 2</media>
                 <media>Avengers: Infinity War</media>
                 <media>The Guardians of the Galaxy Holiday Special</media>
+                <media>Guardians of the Galaxy Vol. 3</media>
             </appearances>
         </prereq>
         <prereq>
@@ -627,6 +797,7 @@
             <appearances>
                 <media>Daredevil</media>
                 <media>The Defenders</media>
+                <media>Daredevil: Born Again</media>
             </appearances>
         </prereq>
         <prereq>
@@ -634,6 +805,8 @@
             <appearances>
                 <media>Daredevil</media>
                 <media>Hawkeye</media>
+                <media>Echo</media>
+                <media>Daredevil: Born Again</media>
             </appearances>
         </prereq>
         <prereq>
@@ -642,6 +815,7 @@
                 <media>Ant-Man</media>
                 <media>Ant-Man and the Wasp</media>
                 <media>Avengers: Endgame</media>
+                <media>Ant-Man and the Wasp: Quantumania</media>
             </appearances>
         </prereq>
         <prereq>
@@ -649,6 +823,14 @@
             <appearances>
                 <media>Ant-Man</media>
                 <media>Ant-Man and the Wasp</media>
+                <media>Ant-Man and the Wasp: Quantumania</media>
+            </appearances>
+        </prereq>
+        <prereq>
+            <title>Jessica Jones</title>
+            <appearances>
+                <media>Jessica Jones</media>
+                <media>The Defenders</media>
             </appearances>
         </prereq>
         <prereq>
@@ -691,6 +873,8 @@
             <appearances>
                 <media>Black Panther</media>
                 <media>Avengers: Infinity War</media>
+                <media>Black Panther: Wakanda Forever</media>
+                <media>Eyes of Wakanda</media>
             </appearances>
         </prereq>
         <prereq>
@@ -698,6 +882,7 @@
             <appearances>
                 <media>Captain Marvel</media>
                 <media>Avengers: Endgame</media>
+                <media>The Marvels</media>
             </appearances>
         </prereq>
         <prereq>
@@ -705,6 +890,7 @@
             <appearances>
                 <media>Black Widow</media>
                 <media>Hawkeye</media>
+                <media>Thunderbolts*</media>
             </appearances>
         </prereq>
     </prereqData>
