@@ -2,6 +2,18 @@
 <data>
     <mediaData>
         <media>
+            <title>Original Spider-Man film series</title>
+            <type>Multiversal</type>
+            <majorPrereqs></majorPrereqs>
+            <minorPrereqs></minorPrereqs>
+        </media>
+        <media>
+            <title>Amazing Spider-Man film series</title>
+            <type>Multiversal</type>
+            <majorPrereqs></majorPrereqs>
+            <minorPrereqs></minorPrereqs>
+        </media>
+        <media>
             <title>Iron Man</title>
             <type>Film</type>
             <majorPrereqs></majorPrereqs>

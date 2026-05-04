@@ -1,5 +1,6 @@
 const inputWatchedFilmsForm = document.querySelector("#input-watched-films-form");
 const inputWatchedSeriesForm = document.querySelector("#input-watched-series-form");
+const inputWatchedMultiversalsForm = document.querySelector("#input-watched-series-form");
 
 let data, mediaData;
 
@@ -20,7 +21,8 @@ async function createForm() {
                 let mediaType = media.querySelector("type").textContent;
 
                 let checkboxDiv = document.createElement("div");
-                let inputWatchedForm = (mediaType == "Film") ? inputWatchedFilmsForm : inputWatchedSeriesForm;
+                let inputWatchedForm = (mediaType == "Film") ? inputWatchedFilmsForm :
+                ((mediaType == "Series") ? inputWatchedSeriesForm : inputWatchedMultiversalsForm);
                 inputWatchedForm.appendChild(checkboxDiv);
                 
                 let checkbox = document.createElement("input");

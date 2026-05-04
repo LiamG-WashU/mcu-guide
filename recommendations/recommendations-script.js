@@ -6,6 +6,8 @@ const recommendedSeriesList = document.querySelector("#recommended-series-list")
 const unrecommendedSeriesList = document.querySelector("#unrecommended-series-list");
 const veryUnrecommendedSeriesList = document.querySelector("#very-unrecommended-series-list");
 const alreadyWatchedSeriesList = document.querySelector("#already-watched-series-list");
+const recommendedMultiversalsList = document.querySelector("#recommended-multiversals-list");
+const alreadyWatchedMultiversalsList = document.querySelector("#already-watched-multiversals-list");
 const mediaLists = document.querySelectorAll(".media-list");
 
 let data, mediaData, prereqData;
@@ -30,7 +32,8 @@ async function getRecommendations() {
                 mediaElement.textContent = mediaTitle;
 
                 if(localStorage.getItem(mediaTitle) == "true") {
-                    let mediaList = ((mediaType == "Film") ? (alreadyWatchedFilmsList) : (alreadyWatchedSeriesList));
+                    let mediaList = (mediaType == "Film") ? alreadyWatchedFilmsList : (
+                    (mediaType == "Series") ? alreadyWatchedSeriesList : alreadyWatchedMultiversalsList);
                     mediaList.appendChild(mediaElement);
                 }
                 else {
@@ -52,7 +55,8 @@ async function getRecommendations() {
                             mediaList.appendChild(mediaElement);
                         }
                         else {
-                            let mediaList = ((mediaType == "Film") ? (recommendedFilmsList) : (recommendedSeriesList));
+                            let mediaList = (mediaType == "Film") ? recommendedFilmsList : (
+                            (mediaType == "Series") ? recommendedSeriesList : recommendedMultiversalsList);
                             mediaList.appendChild(mediaElement);
                         }
                     }
