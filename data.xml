@@ -394,6 +394,8 @@
             <title>Spider-Man: No Way Home</title>
             <type>Film</type>
             <majorPrereqs>
+                <media>Original Spider-Man film series</media>
+                <media>Amazing Spider-Man film series</media>
                 <prereq>Spider-Man</prereq>
                 <prereq>Peter's friends</prereq>
                 <prereq>Doctor Strange</prereq>
