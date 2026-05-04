@@ -3,30 +3,35 @@
         <media>
             <title>Blade</title>
             <type>Multiversal</type>
+            <dataAddress>movie/36647</dataAddress>
             <majorPrereqs></majorPrereqs>
             <minorPrereqs></minorPrereqs>
         </media>
         <media>
             <title>X-Men</title>
             <type>Multiversal</type>
+            <dataAddress>movie/36657</dataAddress>
             <majorPrereqs></majorPrereqs>
             <minorPrereqs></minorPrereqs>
         </media>
         <media>
             <title>Spider-Man</title>
             <type>Multiversal</type>
+            <dataAddress>movie/557</dataAddress>
             <majorPrereqs></majorPrereqs>
             <minorPrereqs></minorPrereqs>
         </media>
         <media>
             <title>Daredevil (film)</title>
             <type>Multiversal</type>
+            <dataAddress>movie/9480</dataAddress>
             <majorPrereqs></majorPrereqs>
             <minorPrereqs></minorPrereqs>
         </media>
         <media>
             <title>Spider-Man 2</title>
             <type>Multiversal</type>
+            <dataAddress>movie/558</dataAddress>
             <majorPrereqs>
                 <media>Spider-Man</media>
             </majorPrereqs>
@@ -35,6 +40,7 @@
         <media>
             <title>Spider-Man 3</title>
             <type>Multiversal</type>
+            <dataAddress>movie/559</dataAddress>
             <majorPrereqs>
                 <media>Spider-Man 2</media>
             </majorPrereqs>
@@ -43,18 +49,21 @@
         <media>
             <title>Fantastic Four</title>
             <type>Multiversal</type>
+            <dataAddress>movie/9738</dataAddress>
             <majorPrereqs></majorPrereqs>
             <minorPrereqs></minorPrereqs>
         </media>
         <media>
             <title>The Amazing Spider-Man</title>
             <type>Multiversal</type>
+            <dataAddress>movie/1930</dataAddress>
             <majorPrereqs></majorPrereqs>
             <minorPrereqs></minorPrereqs>
         </media>
         <media>
             <title>The Amazing Spider-Man 2</title>
             <type>Multiversal</type>
+            <dataAddress>movie/102382</dataAddress>
             <majorPrereqs>
                 <media>The Amazing Spider-Man</media>
             </majorPrereqs>
@@ -63,6 +72,7 @@
         <media>
             <title>Deadpool</title>
             <type>Multiversal</type>
+            <dataAddress>movie/293660</dataAddress>
             <majorPrereqs></majorPrereqs>
             <minorPrereqs>
                 <media>X-Men</media>
@@ -71,6 +81,7 @@
         <media>
             <title>Logan</title>
             <type>Multiversal</type>
+            <dataAddress>movie/263115</dataAddress>
             <majorPrereqs>
                 <media>X-Men</media>
             </majorPrereqs>
@@ -79,18 +90,21 @@
         <media>
             <title>Iron Man</title>
             <type>Film</type>
+            <dataAddress>movie/1726</dataAddress>
             <majorPrereqs></majorPrereqs>
             <minorPrereqs></minorPrereqs>
         </media>
         <media>
             <title>The Incredible Hulk</title>
             <type>Film</type>
+            <dataAddress>movie/1724</dataAddress>
             <majorPrereqs></majorPrereqs>
             <minorPrereqs></minorPrereqs>
         </media>
         <media>
             <title>Iron Man 2</title>
             <type>Film</type>
+            <dataAddress>movie/10138</dataAddress>
             <majorPrereqs>
                 <prereq>Iron Man</prereq>
                 <prereq>Pepper Potts</prereq>
@@ -102,18 +116,21 @@
         <media>
             <title>Thor</title>
             <type>Film</type>
+            <dataAddress>movie/10195</dataAddress>
             <majorPrereqs></majorPrereqs>
             <minorPrereqs></minorPrereqs>
         </media>
         <media>
             <title>Captain America: The First Avenger</title>
             <type>Film</type>
+            <dataAddress>movie/1771</dataAddress>
             <majorPrereqs></majorPrereqs>
             <minorPrereqs></minorPrereqs>
         </media>
         <media>
             <title>The Avengers</title>
             <type>Film</type>
+            <dataAddress>movie/24428</dataAddress>
             <majorPrereqs>
                 <prereq>Iron Man</prereq>
                 <prereq>Captain America</prereq>
@@ -130,6 +147,7 @@
         <media>
             <title>Iron Man 3</title>
             <type>Film</type>
+            <dataAddress>movie/68721</dataAddress>
             <majorPrereqs>
                 <prereq>Iron Man</prereq>
                 <prereq>Pepper Potts</prereq>
@@ -142,6 +160,7 @@
         <media>
             <title>Agents of S.H.I.E.L.D.</title>
             <type>Series</type>
+            <dataAddress>tv/1403</dataAddress>
             <majorPrereqs>
                 <prereq>S.H.I.E.L.D.</prereq>
             </majorPrereqs>
@@ -150,6 +169,7 @@
         <media>
             <title>Thor: The Dark World</title>
             <type>Film</type>
+            <dataAddress>movie/76338</dataAddress>
             <majorPrereqs>
                 <media>Thor</media>
             </majorPrereqs>
@@ -158,6 +178,7 @@
         <media>
             <title>Captain America: The Winter Soldier</title>
             <type>Film</type>
+            <dataAddress>movie/100402</dataAddress>
             <majorPrereqs>
                 <media>Captain America: The First Avenger</media>
                 <prereq>S.H.I.E.L.D.</prereq>
@@ -170,12 +191,14 @@
         <media>
             <title>Guardians of the Galaxy</title>
             <type>Film</type>
+            <dataAddress>movie/118340</dataAddress>
             <majorPrereqs></majorPrereqs>
             <minorPrereqs></minorPrereqs>
         </media>
         <media>
             <title>Agent Carter</title>
             <type>Series</type>
+            <dataAddress>tv/61550</dataAddress>
             <majorPrereqs></majorPrereqs>
             <minorPrereqs>
                 <media>Captain America: The First Avenger</media>
@@ -184,12 +207,14 @@
         <media>
             <title>Daredevil</title>
             <type>Series</type>
+            <dataAddress>tv/61889</dataAddress>
             <majorPrereqs></majorPrereqs>
             <minorPrereqs></minorPrereqs>
         </media>
         <media>
             <title>Avengers: Age of Ultron</title>
             <type>Film</type>
+            <dataAddress>movie/99861</dataAddress>
             <majorPrereqs>
                 <prereq>Avengers</prereq>
                 <prereq>Iron Man</prereq>
@@ -205,6 +230,7 @@
         <media>
             <title>Ant-Man</title>
             <type>Film</type>
+            <dataAddress>movie/102899</dataAddress>
             <majorPrereqs></majorPrereqs>
             <minorPrereqs>
                 <prereq>Avengers</prereq>
@@ -213,12 +239,14 @@
         <media>
             <title>Jessica Jones</title>
             <type>Series</type>
+            <dataAddress>tv/38472</dataAddress>
             <majorPrereqs></majorPrereqs>
             <minorPrereqs></minorPrereqs>
         </media>
         <media>
             <title>Captain America: Civil War</title>
             <type>Film</type>
+            <dataAddress>movie/271110</dataAddress>
             <majorPrereqs>
                 <media>Captain America: The Winter Soldier</media>
                 <prereq>Avengers</prereq>
@@ -232,24 +260,28 @@
         <media>
             <title>Luke Cage</title>
             <type>Series</type>
+            <dataAddress>tv/62126</dataAddress>
             <majorPrereqs></majorPrereqs>
             <minorPrereqs></minorPrereqs>
         </media>
         <media>
             <title>Doctor Strange</title>
             <type>Film</type>
+            <dataAddress>movie/284052</dataAddress>
             <majorPrereqs></majorPrereqs>
             <minorPrereqs></minorPrereqs>
         </media>
         <media>
             <title>Iron Fist</title>
             <type>Series</type>
+            <dataAddress>tv/62127</dataAddress>
             <majorPrereqs></majorPrereqs>
             <minorPrereqs></minorPrereqs>
         </media>
         <media>
             <title>Guardians of the Galaxy Vol. 2</title>
             <type>Film</type>
+            <dataAddress>movie/283995</dataAddress>
             <majorPrereqs>
                 <media>Guardians of the Galaxy</media>
             </majorPrereqs>
@@ -259,6 +291,7 @@
             <title>Spider-Man: Homecoming</title>
             <type>Film</type>
             <majorPrereqs></majorPrereqs>
+            <dataAddress>movie/315635</dataAddress>
             <minorPrereqs>
                 <prereq>Spider-Man</prereq>
                 <prereq>Iron Man</prereq>
@@ -267,6 +300,7 @@
         <media>
             <title>The Defenders</title>
             <type>Series</type>
+            <dataAddress>tv/62285</dataAddress>
             <majorPrereqs>
                 <media>Jessica Jones</media>
                 <media>Iron Fist</media>
@@ -279,12 +313,14 @@
         <media>
             <title>Inhumans</title>
             <type>Series</type>
+            <dataAddress>tv/68716</dataAddress>
             <majorPrereqs></majorPrereqs>
             <minorPrereqs></minorPrereqs>
         </media>
         <media>
             <title>Thor: Ragnarok</title>
             <type>Film</type>
+            <dataAddress>movie/284053</dataAddress>
             <majorPrereqs>
                 <prereq>Thor</prereq>
                 <prereq>Loki</prereq>
@@ -298,6 +334,7 @@
         <media>
             <title>The Punisher</title>
             <type>Series</type>
+            <dataAddress>tv/67178</dataAddress>
             <majorPrereqs>
                 <media>Daredevil</media>
             </majorPrereqs>
@@ -306,6 +343,7 @@
         <media>
             <title>Runaways</title>
             <type>Series</type>
+            <dataAddress>tv/67466</dataAddress>
             <majorPrereqs></majorPrereqs>
             <minorPrereqs>
                 <media>Cloak &amp; Dagger</media>
@@ -314,6 +352,7 @@
         <media>
             <title>Black Panther</title>
             <type>Film</type>
+            <dataAddress>movie/284054</dataAddress>
             <majorPrereqs></majorPrereqs>
             <minorPrereqs>
                 <prereq>Black Panther</prereq>
@@ -322,6 +361,7 @@
         <media>
             <title>Avengers: Infinity War</title>
             <type>Film</type>
+            <dataAddress>movie/299536</dataAddress>
             <majorPrereqs>
                 <prereq>Avengers</prereq>
                 <prereq>Iron Man</prereq>
@@ -341,12 +381,14 @@
         <media>
             <title>Cloak &amp; Dagger</title>
             <type>Series</type>
+            <dataAddress>tv/66190</dataAddress>
             <majorPrereqs></majorPrereqs>
             <minorPrereqs></minorPrereqs>
         </media>
         <media>
             <title>Ant-Man and the Wasp</title>
             <type>Film</type>
+            <dataAddress>movie/363088</dataAddress>
             <majorPrereqs>
                 <prereq>Ant-Man</prereq>
                 <prereq>Pym family</prereq>
@@ -358,12 +400,14 @@
         <media>
             <title>Captain Marvel</title>
             <type>Film</type>
+            <dataAddress>movie/299537</dataAddress>
             <majorPrereqs></majorPrereqs>
             <minorPrereqs></minorPrereqs>
         </media>
         <media>
             <title>Avengers: Endgame</title>
             <type>Film</type>
+            <dataAddress>movie/299534</dataAddress>
             <majorPrereqs>
                 <media>Avengers: Infinity War</media>
                 <media>The Avengers</media>
@@ -378,6 +422,7 @@
         <media>
             <title>Spider-Man: Far From Home</title>
             <type>Film</type>
+            <dataAddress>movie/429617</dataAddress>
             <majorPrereqs>
                 <prereq>Spider-Man</prereq>
                 <prereq>Peter's friends</prereq>
@@ -390,6 +435,7 @@
         <media>
             <title>WandaVision</title>
             <type>Series</type>
+            <dataAddress>tv/85271</dataAddress>
             <majorPrereqs>
                 <media>Avengers: Infinity War</media>
                 <media>Avengers: Endgame</media>
@@ -401,6 +447,7 @@
         <media>
             <title>The Falcon and the Winter Soldier</title>
             <type>Series</type>
+            <dataAddress>tv/88396</dataAddress>
             <majorPrereqs>
                 <media>Avengers: Endgame</media>
                 <prereq>Winter Soldier</prereq>
@@ -413,6 +460,7 @@
         <media>
             <title>Loki</title>
             <type>Series</type>
+            <dataAddress>tv/84958</dataAddress>
             <majorPrereqs>
                 <prereq>Loki</prereq>
                 <media>Avengers: Endgame</media>
@@ -422,6 +470,7 @@
         <media>
             <title>Black Widow</title>
             <type>Film</type>
+            <dataAddress>movie/497698</dataAddress>
             <majorPrereqs>
                 <prereq>Black Widow</prereq>
             </majorPrereqs>
@@ -432,18 +481,21 @@
         <media>
             <title>Shang-Chi and the Legend of the Ten Rings</title>
             <type>Film</type>
+            <dataAddress>movie/566525</dataAddress>
             <majorPrereqs></majorPrereqs>
             <minorPrereqs></minorPrereqs>
         </media>
         <media>
             <title>Eternals</title>
             <type>Film</type>
+            <dataAddress>movie/524434</dataAddress>
             <majorPrereqs></majorPrereqs>
             <minorPrereqs></minorPrereqs>
         </media>
         <media>
             <title>Hawkeye</title>
             <type>Series</type>
+            <dataAddress>tv/88329</dataAddress>
             <majorPrereqs>
                 <prereq>Hawkeye</prereq>
             </majorPrereqs>
@@ -456,6 +508,7 @@
         <media>
             <title>Spider-Man: No Way Home</title>
             <type>Film</type>
+            <dataAddress>movie/634649</dataAddress>
             <majorPrereqs>
                 <prereq>Spider-Man</prereq>
                 <prereq>Peter's friends</prereq>
@@ -475,12 +528,14 @@
         <media>
             <title>Moon Knight</title>
             <type>Series</type>
+            <dataAddress>tv/92749</dataAddress>
             <majorPrereqs></majorPrereqs>
             <minorPrereqs></minorPrereqs>
         </media>
         <media>
             <title>Doctor Strange in the Multiverse of Madness</title>
             <type>Film</type>
+            <dataAddress>movie/453395</dataAddress>
             <majorPrereqs>
                 <media>Doctor Strange</media>
                 <media>WandaVision</media>
@@ -490,12 +545,14 @@
         <media>
             <title>Ms. Marvel</title>
             <type>Series</type>
+            <dataAddress>tv/92782</dataAddress>
             <majorPrereqs></majorPrereqs>
             <minorPrereqs></minorPrereqs>
         </media>
         <media>
             <title>Thor: Love and Thunder</title>
             <type>Film</type>
+            <dataAddress>movie/616037</dataAddress>
             <majorPrereqs>
                 <media>Thor: Ragnarok</media>
                 <prereq>Jane Foster</prereq>
@@ -505,6 +562,7 @@
         <media>
             <title>She-Hulk: Attorney at Law</title>
             <type>Series</type>
+            <dataAddress>tv/92783</dataAddress>
             <majorPrereqs>
                 <media>Avengers: Endgame</media>
             </majorPrereqs>
@@ -513,12 +571,14 @@
         <media>
             <title>Werewolf by Night</title>
             <type>Film</type>
+            <dataAddress>movie/894205</dataAddress>
             <majorPrereqs></majorPrereqs>
             <minorPrereqs></minorPrereqs>
         </media>
         <media>
             <title>The Guardians of the Galaxy Holiday Special</title>
             <type>Film</type>
+            <dataAddress>movie/774752</dataAddress>
             <majorPrereqs>
                 <media>Guardians of the Galaxy Vol. 2</media>
                 <media>Avengers: Infinity War</media>
@@ -529,6 +589,7 @@
         <media>
             <title>Ant-Man and the Wasp: Quantumania</title>
             <type>Film</type>
+            <dataAddress>movie/640146</dataAddress>
             <majorPrereqs>
                 <prereq>Ant-Man</prereq>
                 <prereq>Pym family</prereq>
@@ -540,6 +601,7 @@
         <media>
             <title>Guardians of the Galaxy Vol. 3</title>
             <type>Film</type>
+            <dataAddress>movie/447365</dataAddress>
             <majorPrereqs>
                 <media>Avengers: Infinity War</media>
                 <media>Avengers: Endgame</media>
@@ -549,6 +611,7 @@
         <media>
             <title>Secret Invasion</title>
             <type>Series</type>
+            <dataAddress>tv/114472</dataAddress>
             <majorPrereqs>
                 <media>Captain Marvel</media>
             </majorPrereqs>
@@ -559,6 +622,7 @@
         <media>
             <title>The Marvels</title>
             <type>Film</type>
+            <dataAddress>movie/609681</dataAddress>
             <majorPrereqs>
                 <media>Captain Marvel</media>
                 <media>Ms. Marvel</media>
@@ -570,12 +634,14 @@
         <media>
             <title>Echo</title>
             <type>Series</type>
+            <dataAddress>tv/122226</dataAddress>
             <majorPrereqs></majorPrereqs>
             <minorPrereqs></minorPrereqs>
         </media>
         <media>
             <title>Deadpool &amp; Wolverine</title>
             <type>Film</type>
+            <dataAddress>movie/533535</dataAddress>
             <majorPrereqs>
                 <media>Deadpool</media>
                 <media>X-Men</media>
@@ -591,6 +657,7 @@
         <media>
             <title>Agatha All Along</title>
             <type>Series</type>
+            <dataAddress>tv/138501</dataAddress>
             <majorPrereqs>
                 <media>WandaVision</media>
             </majorPrereqs>
@@ -599,6 +666,7 @@
         <media>
             <title>Captain America: Brave New World</title>
             <type>Film</type>
+            <dataAddress>movie/822119</dataAddress>
             <majorPrereqs>
                 <media>The Falcon and the Winter Soldier</media>
                 <media>The Incredible Hulk</media>
@@ -608,6 +676,7 @@
         <media>
             <title>Daredevil: Born Again</title>
             <type>Series</type>
+            <dataAddress>tv/202555</dataAddress>
             <majorPrereqs>
                 <media>Daredevil</media>
             </majorPrereqs>
@@ -618,6 +687,7 @@
         <media>
             <title>Thunderbolts*</title>
             <type>Film</type>
+            <dataAddress>movie/986056</dataAddress>
             <majorPrereqs>
                 <media>Black Widow</media>
                 <prereq>Winter Soldier</prereq>
@@ -630,6 +700,7 @@
         <media>
             <title>Ironheart</title>
             <type>Series</type>
+            <dataAddress>tv/114471</dataAddress>
             <majorPrereqs></majorPrereqs>
             <minorPrereqs>
                 <media>Black Panther: Wakanda Forever</media>
@@ -638,12 +709,14 @@
         <media>
             <title>The Fantastic Four: First Steps</title>
             <type>Film</type>
+            <dataAddress>movie/617126</dataAddress>
             <majorPrereqs></majorPrereqs>
             <minorPrereqs></minorPrereqs>
         </media>
         <media>
             <title>Eyes of Wakanda</title>
             <type>Series</type>
+            <dataAddress>tv/241388</dataAddress>
             <majorPrereqs></majorPrereqs>
             <minorPrereqs>
                 <prereq>Wakanda</prereq>
@@ -652,6 +725,7 @@
         <media>
             <title>Wonder Man</title>
             <type>Series</type>
+            <dataAddress>tv/198178</dataAddress>
             <majorPrereqs></majorPrereqs>
             <minorPrereqs>
                 <prereq>Trevor Slattery</prereq>

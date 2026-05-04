@@ -5,7 +5,7 @@ const inputWatchedMultiversalsForm = document.querySelector("#input-watched-mult
 let data, mediaData;
 
 async function fetchData() {
-    let response = await fetch("./data.xml");
+    let response = await fetch("https://liamg-washu.github.io/mcu-guide/data.xml");
     if(!response.ok) throw new Error("Failed to connect to the server!");
     let responseXML = await response.text();
     data = new DOMParser().parseFromString(responseXML, "text/xml");
@@ -19,6 +19,7 @@ async function createForm() {
             for(media of mediaData) {
                 let mediaTitle = media.querySelector("title").textContent;
                 let mediaType = media.querySelector("type").textContent;
+                let mediaDataAddress = media.querySelector("dataAddress").textContent;
 
                 let checkboxDiv = document.createElement("div");
                 let inputWatchedForm = (mediaType == "Film") ? inputWatchedFilmsForm :
@@ -31,9 +32,14 @@ async function createForm() {
                 checkbox.checked = (localStorage.getItem(checkbox.getAttribute("id")) == "true");
                 checkboxDiv.appendChild(checkbox);
 
+                let checkboxTitle = document.createElement("a");
+                checkboxTitle.classList.add("quiet-link");
+                checkboxTitle.setAttribute("href", "./media-information.html?address=" + mediaDataAddress);
+                checkboxTitle.textContent = mediaTitle;
+
                 let checkboxLabel = document.createElement("label");
                 checkboxLabel.setAttribute("for", mediaTitle);
-                checkboxLabel.textContent = mediaTitle;
+                checkboxLabel.appendChild(checkboxTitle);
                 checkboxDiv.appendChild(checkboxLabel);
                 
                 checkbox.addEventListener("click", function() {
