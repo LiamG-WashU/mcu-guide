@@ -38,7 +38,7 @@ async function getRecommendations() {
                 mediaElementTitle.textContent = mediaTitle;
 
                 let mediaElement = document.createElement("li");
-                mediaElement.appendChild(mediaTitle);
+                mediaElement.appendChild(mediaElementTitle);
 
                 if(localStorage.getItem(mediaTitle) == "true") {
                     let mediaList = (mediaType == "Film") ? alreadyWatchedFilmsList : (
