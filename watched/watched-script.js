@@ -1,6 +1,6 @@
 const inputWatchedFilmsForm = document.querySelector("#input-watched-films-form");
 const inputWatchedSeriesForm = document.querySelector("#input-watched-series-form");
-const inputWatchedMultiversalsForm = document.querySelector("#input-watched-series-form");
+const inputWatchedMultiversalsForm = document.querySelector("#input-watched-multiversals-form");
 
 let data, mediaData;
 
