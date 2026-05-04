@@ -1,4 +1,4 @@
-<!-- Incomplete data just for testing: only updated through 2020! -->
+<!-- Incomplete data just for testing: only updated through 2022! -->
 <data>
     <mediaData>
         <media>
@@ -312,6 +312,138 @@
                 <media>Avengers: Endgame</media>
             </minorPrereqs>
         </media>
+        <media>
+            <title>WandaVision</title>
+            <type>Series</type>
+            <majorPrereqs>
+                <media>Avengers: Infinity War</media>
+                <media>Avengers: Endgame</media>
+            </majorPrereqs>
+            <minorPrereqs>
+                <media>Avengers: Age of Ultron</media>
+            </minorPrereqs>
+        </media>
+        <media>
+            <title>The Falcon and the Winter Soldier</title>
+            <type>Series</type>
+            <majorPrereqs>
+                <media>Avengers: Endgame</media>
+                <prereq>Winter Soldier</prereq>
+            </majorPrereqs>
+            <minorPrereqs>
+                <media>Captain America: Civil War</media>
+                <prereq>Wakanda</prereq>
+            </minorPrereqs>
+        </media>
+        <media>
+            <title>Loki</title>
+            <type>Series</type>
+            <majorPrereqs>
+                <prereq>Loki</prereq>
+                <media>Avengers: Endgame</media>
+            </majorPrereqs>
+            <minorPrereqs></minorPrereqs>
+        </media>
+        <media>
+            <title>Black Widow</title>
+            <type>Film</type>
+            <majorPrereqs>
+                <prereq>Black Widow</prereq>
+            </majorPrereqs>
+            <minorPrereqs>
+                <media>Captain America: Civil War</media>
+            </minorPrereqs>
+        </media>
+        <media>
+            <title>Shang-Chi and the Legend of the Ten Rings</title>
+            <type>Film</type>
+            <majorPrereqs></majorPrereqs>
+            <minorPrereqs></minorPrereqs>
+        </media>
+        <media>
+            <title>Eternals</title>
+            <type>Film</type>
+            <majorPrereqs></majorPrereqs>
+            <minorPrereqs></minorPrereqs>
+        </media>
+        <media>
+            <title>Hawkeye</title>
+            <type>Series</type>
+            <majorPrereqs>
+                <prereq>Hawkeye</prereq>
+            </majorPrereqs>
+            <minorPrereqs>
+                <prereq>Kingpin</prereq>
+                <prereq>Yelena Belova</prereq>
+                <prereq>Avengers</prereq>
+            </minorPrereqs>
+        </media>
+        <media>
+            <title>Spider-Man: No Way Home</title>
+            <type>Film</type>
+            <majorPrereqs>
+                <prereq>Spider-Man</prereq>
+                <prereq>Peter's friends</prereq>
+                <prereq>Doctor Strange</prereq>
+            </majorPrereqs>
+            <minorPrereqs>
+                <media>Spider-Man: Far From Home</media>
+            </minorPrereqs>
+        </media>
+        <media>
+            <title>Moon Knight</title>
+            <type>Series</type>
+            <majorPrereqs></majorPrereqs>
+            <minorPrereqs></minorPrereqs>
+        </media>
+        <media>
+            <title>Doctor Strange in the Multiverse of Madness</title>
+            <type>Film</type>
+            <majorPrereqs>
+                <media>Doctor Strange</media>
+                <media>WandaVision</media>
+            </majorPrereqs>
+            <minorPrereqs></minorPrereqs>
+        </media>
+        <media>
+            <title>Ms. Marvel</title>
+            <type>Series</type>
+            <majorPrereqs></majorPrereqs>
+            <minorPrereqs></minorPrereqs>
+        </media>
+        <media>
+            <title>Thor: Love and Thunder</title>
+            <type>Film</type>
+            <majorPrereqs>
+                <media>Thor: Ragnarok</media>
+                <prereq>Jane Foster</prereq>
+            </majorPrereqs>
+            <minorPrereqs></minorPrereqs>
+        </media>
+        <media>
+            <title>She-Hulk: Attorney at Law</title>
+            <type>Series</type>
+            <majorPrereqs>
+                <media>Avengers: Endgame</media>
+            </majorPrereqs>
+            <minorPrereqs></minorPrereqs>
+        </media>
+        <media>
+            <title>Werewolf by Night</title>
+            <type>Film</type>
+            <majorPrereqs></majorPrereqs>
+            <minorPrereqs></minorPrereqs>
+        </media>
+        <media>
+            <title>The Guardians of the Galaxy Holiday Special</title>
+            <type>Film</type>
+            <majorPrereqs>
+                <prereq>Guardians of the Galaxy Vol. 2</prereq>
+                <media>Avengers: Infinity War</media>
+                <media>Avengers: Endgame</media>
+            </majorPrereqs>
+            <minorPrereqs></minorPrereqs>
+        </media>
     </mediaData>
     <prereqData>
         <prereq>
@@ -363,6 +495,7 @@
                 <media>Avengers: Age of Ultron</media>
                 <media>Captain America: Civil War</media>
                 <media>Avengers: Endgame</media>
+                <media>Black Widow</media>
             </appearances>
         </prereq>
         <prereq>
@@ -393,6 +526,14 @@
                 <media>Thor: Ragnarok</media>
                 <media>Avengers: Infinity War</media>
                 <media>Avengers: Endgame</media>
+                <media>Thor: Love and Thunder</media>
+            </appearances>
+        </prereq>
+        <prereq>
+            <title>Jane Foster</title>
+            <appearances>
+                <media>Thor</media>
+                <media>Thor: The Dark World</media>
             </appearances>
         </prereq>
         <prereq>
@@ -402,6 +543,7 @@
                 <media>The Avengers</media>
                 <media>Thor: The Dark World</media>
                 <media>Thor: Ragnarok</media>
+                <media>Loki</media>
             </appearances>
         </prereq>
         <prereq>
@@ -421,6 +563,14 @@
                 <media>Avengers: Age of Ultron</media>
                 <media>Captain America: Civil War</media>
                 <media>Avengers: Endgame</media>
+            </appearances>
+        </prereq>
+        <prereq>
+            <title>Winter Soldier</title>
+            <appearances>
+                <media>Captain America: The Winter Soldier</media>
+                <media>Captain America: Civil War</media>
+                <media>The Falcon and the Winter Soldier</media>
             </appearances>
         </prereq>
         <prereq>
@@ -446,6 +596,7 @@
                 <media>The Avengers</media>
                 <media>Avengers: Age of Ultron</media>
                 <media>Avengers: Endgame</media>
+                <media>Hawkeye</media>
             </appearances>
         </prereq>
         <prereq>
@@ -453,6 +604,8 @@
             <appearances>
                 <media>Guardians of the Galaxy</media>
                 <media>Guardians of the Galaxy Vol. 2</media>
+                <media>Avengers: Infinity War</media>
+                <media>The Guardians of the Galaxy Holiday Special</media>
             </appearances>
         </prereq>
         <prereq>
@@ -460,6 +613,13 @@
             <appearances>
                 <media>Daredevil</media>
                 <media>The Defenders</media>
+            </appearances>
+        </prereq>
+        <prereq>
+            <title>Kingpin</title>
+            <appearances>
+                <media>Daredevil</media>
+                <media>Hawkeye</media>
             </appearances>
         </prereq>
         <prereq>
@@ -484,6 +644,7 @@
                 <media>Spider-Man: Homecoming</media>
                 <media>Avengers: Infinity War</media>
                 <media>Spider-Man: Far From Home</media>
+                <media>Spider-Man: No Way Home</media>
             </appearances>
         </prereq>
         <prereq>
@@ -491,6 +652,7 @@
             <appearances>
                 <media>Spider-Man: Homecoming</media>
                 <media>Spider-Man: Far From Home</media>
+                <media>Spider-Man: No Way Home</media>
             </appearances>
         </prereq>
         <prereq>
@@ -506,6 +668,8 @@
             <appearances>
                 <media>Doctor Strange</media>
                 <media>Avengers: Infinity War</media>
+                <media>Spider-Man: No Way Home</media>
+                <media>Doctor Strange in the Multiverse of Madness</media>
             </appearances>
         </prereq>
         <prereq>
@@ -520,6 +684,13 @@
             <appearances>
                 <media>Captain Marvel</media>
                 <media>Avengers: Endgame</media>
+            </appearances>
+        </prereq>
+        <prereq>
+            <title>Yelena Belova</title>
+            <appearances>
+                <media>Black Widow</media>
+                <media>Hawkeye</media>
             </appearances>
         </prereq>
     </prereqData>
