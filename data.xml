@@ -149,6 +149,7 @@
             <majorPrereqs></majorPrereqs>
             <minorPrereqs>
                 <prereq>Avengers</prereq>
+                <prereq>Falcon</prereq>
             </minorPrereqs>
         </media>
         <media>
@@ -480,6 +481,15 @@
             <dataAddress>tv/92783</dataAddress>
             <majorPrereqs>
                 <media>Avengers: Endgame</media>
+            </majorPrereqs>
+            <minorPrereqs></minorPrereqs>
+        </media>
+        <media>
+            <title>Black Panther: Wakanda Forever</title>
+            <type>Film</type>
+            <dataAddress>movie/505642</dataAddress>
+            <majorPrereqs>
+                <media>Black Panther</media>
             </majorPrereqs>
             <minorPrereqs></minorPrereqs>
         </media>
@@ -890,14 +900,6 @@
             </appearances>
         </prereq>
         <prereq>
-            <title>Trevor Slattery</title>
-            <appearances>
-                <media>Iron Man 3</media>
-                <media>Shang-Chi and the Legend of the Ten Rings</media>
-                <media>Wonder Man</media>
-            </appearances>
-        </prereq>
-        <prereq>
             <title>S.H.I.E.L.D.</title>
             <appearances>
                 <media>The Avengers</media>
@@ -912,6 +914,23 @@
                 <media>Avengers: Age of Ultron</media>
                 <media>Avengers: Endgame</media>
                 <media>Hawkeye</media>
+            </appearances>
+        </prereq>
+        <prereq>
+            <title>Trevor Slattery</title>
+            <appearances>
+                <media>Iron Man 3</media>
+                <media>Shang-Chi and the Legend of the Ten Rings</media>
+                <media>Wonder Man</media>
+            </appearances>
+        </prereq>
+        <prereq>
+            <title>Falcon</title>
+            <appearances>
+                <media>Captain America: The Winter Soldier</media>
+                <media>Captain America: Civil War</media>
+                <media>The Falcon and the Winter Soldier</media>
+                <media>Captain America: Brave New World</media>
             </appearances>
         </prereq>
         <prereq>
