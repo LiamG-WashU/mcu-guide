@@ -8,18 +8,17 @@ body {
     min-height: 100vh;
     margin: 0;
     padding: 0;
-    background-color: lightgray;
+    background-color: lightgrey;
 }
 
 header {
     min-height: 5vh;
     align-content: center;
-    background-color: gray;
+    background-color: grey;
 }
 
 #navbar {
     margin: 1vh;
-    text-align: left;
 }
 
 #navbar a {
@@ -28,22 +27,29 @@ header {
 
 main {
     flex: 1;
-    padding: 1vh;
-}
-
-.horizontal-container {
-    display: flex;
-    flex-direction: row;
-    gap: 5vh;
+    padding: 2vh;
 }
 
 .heading {
     font-size: larger;
 }
 
-.info {
-    color: black;
-    text-decoration: none;
+.horizontal-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.container-block {
+    background-color: grey;
+    max-width: fit-content;
+    max-height: fit-content;
+    margin: 2vh;
+    padding: 1vh;
+    border-radius: 1vh;
+}
+
+label {
+    line-height: 1;
 }
 
 .media-list {
@@ -55,8 +61,9 @@ main {
     list-style: none;
 }
 
-label {
-    line-height: 1;
+.info {
+    color: black;
+    text-decoration: none;
 }
 
 .quiet-link {
@@ -70,7 +77,8 @@ label {
 }
 
 footer {
-    margin-top: 5vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    margin-right: 2vh;
     margin-left: auto;
-    padding: 1vh;
 }
