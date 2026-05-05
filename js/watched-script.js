@@ -5,7 +5,7 @@ const inputWatchedMultiversalsForm = document.querySelector("#input-watched-mult
 let mediaData;
 
 async function fetchData() {
-    let response = await fetch("https://liamg-washu.github.io/mcu-guide/data.xml");
+    let response = await fetch("./data.xml");
     if(!response.ok) throw new Error("Failed to connect to the server!");
     let responseXML = await response.text();
     let data = new DOMParser().parseFromString(responseXML, "text/xml");
