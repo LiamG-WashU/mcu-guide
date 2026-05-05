@@ -11,7 +11,7 @@ async function displayData() {
 
         let image = document.createElement("img");
         image.classList.add("media-image");
-        image.setAttribute("src", "https://image.tmdb.org/t/p/w1280" + data.poster_path);
+        image.src = "https://image.tmdb.org/t/p/w1280" + data.poster_path;
         infobox.appendChild(image);
 
         let title = document.createElement("p");

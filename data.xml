@@ -163,6 +163,7 @@
             <dataAddress>tv/1403</dataAddress>
             <majorPrereqs>
                 <prereq>S.H.I.E.L.D.</prereq>
+                <prereq>Phil Coulson</prereq>
             </majorPrereqs>
             <minorPrereqs></minorPrereqs>
         </media>

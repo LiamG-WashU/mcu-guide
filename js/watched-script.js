@@ -2,13 +2,13 @@ const inputWatchedFilmsForm = document.querySelector("#input-watched-films-form"
 const inputWatchedSeriesForm = document.querySelector("#input-watched-series-form");
 const inputWatchedMultiversalsForm = document.querySelector("#input-watched-multiversals-form");
 
-let data, mediaData;
+let mediaData;
 
 async function fetchData() {
-    let response = await fetch("https://liamg-washu.github.io/mcu-guide/data.xml");
+    let response = await fetch("./data.xml");
     if(!response.ok) throw new Error("Failed to connect to the server!");
     let responseXML = await response.text();
-    data = new DOMParser().parseFromString(responseXML, "text/xml");
+    let data = new DOMParser().parseFromString(responseXML, "text/xml");
     mediaData = data.querySelector("mediaData").children;
 }
 
@@ -28,24 +28,24 @@ async function createForm() {
                 
                 let checkbox = document.createElement("input");
                 checkbox.type = "checkbox";
-                checkbox.setAttribute("id", mediaTitle);
-                checkbox.checked = (localStorage.getItem(checkbox.getAttribute("id")) == "true");
+                checkbox.id = mediaTitle;
+                checkbox.checked = (localStorage.getItem(checkbox.id) == "true");
                 checkboxDiv.appendChild(checkbox);
 
                 let checkboxTitle = document.createElement("a");
                 checkboxTitle.classList.add("quiet-link");
-                checkboxTitle.setAttribute("href", "./media-information.html?address=" + mediaDataAddress);
+                checkboxTitle.href = "./media-information.html?address=" + mediaDataAddress;
                 checkboxTitle.textContent = mediaTitle;
 
                 let checkboxLabel = document.createElement("label");
-                checkboxLabel.setAttribute("for", mediaTitle);
+                checkboxLabel.for = mediaTitle;
                 checkboxLabel.appendChild(checkboxTitle);
                 checkboxDiv.appendChild(checkboxLabel);
                 
                 checkbox.addEventListener("click", function() {
                     for(let currentChild of inputWatchedForm.children) {
                         currentCheckbox = currentChild.children[0];
-                        localStorage.setItem(currentCheckbox.getAttribute("id"), currentCheckbox.checked);
+                        localStorage.setItem(currentCheckbox.id, currentCheckbox.checked);
                     }
                 });
             }

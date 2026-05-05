@@ -12,20 +12,20 @@ const veryUnrecommendedMultiversalsList = document.querySelector("#very-unrecomm
 const alreadyWatchedMultiversalsList = document.querySelector("#already-watched-multiversals-list");
 const mediaLists = document.querySelectorAll(".media-list");
 
-let data, mediaData, prereqData;
+let mediaData, prereqData;
 
 async function fetchData() {
     let response = await fetch("./data.xml");
     if(!response.ok) throw new Error("Failed to connect to the server!");
     let responseXML = await response.text();
-    data = new DOMParser().parseFromString(responseXML, "text/xml");
+    let data = new DOMParser().parseFromString(responseXML, "text/xml");
     mediaData = data.querySelector("mediaData").children;
     prereqData = data.querySelector("prereqData").children;
 }
 
 async function getRecommendations() {
     try {
-        await fetchData()
+        await fetchData();
         if(mediaData && mediaData.length > 0) {
             for(media of mediaData) {
                 let mediaTitle = media.querySelector("title").textContent;
@@ -34,7 +34,7 @@ async function getRecommendations() {
 
                 let mediaElementTitle = document.createElement("a");
                 mediaElementTitle.classList.add("quiet-link");
-                mediaElementTitle.setAttribute("href", "./media-information.html?address=" + mediaDataAddress);
+                mediaElementTitle.href = "./media-information.html?address=" + mediaDataAddress;
                 mediaElementTitle.textContent = mediaTitle;
 
                 let mediaElement = document.createElement("li");
@@ -91,9 +91,7 @@ async function getRecommendations() {
 
 function prereqSatisfied(prereq) {
     let prereqTitle = prereq.textContent;
-    if(prereq.tagName == "media") {
-        return (localStorage.getItem(prereqTitle) == "true");
-    }
+    if(prereq.tagName == "media") return (localStorage.getItem(prereqTitle) == "true");
     else {
         for(let prereq2 of prereqData) {
             if(prereq2.querySelector("title").textContent == prereqTitle) {
