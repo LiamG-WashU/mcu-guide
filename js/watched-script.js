@@ -43,10 +43,7 @@ async function createForm() {
                 checkboxDiv.appendChild(checkboxLabel);
                 
                 checkbox.addEventListener("click", function() {
-                    for(let currentChild of inputWatchedForm.children) {
-                        currentCheckbox = currentChild.children[0];
-                        localStorage.setItem(currentCheckbox.id, currentCheckbox.checked);
-                    }
+                    localStorage.setItem(mediaTitle, checkbox.checked);
                 });
             }
         }

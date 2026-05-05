@@ -1,92 +1,6 @@
+<!-- I (Liam) created this data. For each piece of media, I enter the prerequisites that I think will help viewers understand the story. Some prerequisites are specific pieces of media, e.g. <media>Iron Man</media>. Other prerequisites are more flexible: e.g. <prereq>Thor</prereq> corresponds to a list of media featuring Thor, any of which suffice to introduce a viewer to the character. I have also labelled each prerequisite as "major" or "minor". The process is somewhat arbitrary - some prerequisites are hard to classify as major or minor, whereas for others I'm not sure whether they're a necessary prerequisite at all - but I have done my best to make the data as informative as possible. The data also includes addresses to get information from the TMDB database (e.g. release date). -->
 <data>
     <mediaData>
-        <media>
-            <title>Blade</title>
-            <type>Multiversal</type>
-            <dataAddress>movie/36647</dataAddress>
-            <majorPrereqs></majorPrereqs>
-            <minorPrereqs></minorPrereqs>
-        </media>
-        <media>
-            <title>X-Men</title>
-            <type>Multiversal</type>
-            <dataAddress>movie/36657</dataAddress>
-            <majorPrereqs></majorPrereqs>
-            <minorPrereqs></minorPrereqs>
-        </media>
-        <media>
-            <title>Spider-Man</title>
-            <type>Multiversal</type>
-            <dataAddress>movie/557</dataAddress>
-            <majorPrereqs></majorPrereqs>
-            <minorPrereqs></minorPrereqs>
-        </media>
-        <media>
-            <title>Daredevil (film)</title>
-            <type>Multiversal</type>
-            <dataAddress>movie/9480</dataAddress>
-            <majorPrereqs></majorPrereqs>
-            <minorPrereqs></minorPrereqs>
-        </media>
-        <media>
-            <title>Spider-Man 2</title>
-            <type>Multiversal</type>
-            <dataAddress>movie/558</dataAddress>
-            <majorPrereqs>
-                <media>Spider-Man</media>
-            </majorPrereqs>
-            <minorPrereqs></minorPrereqs>
-        </media>
-        <media>
-            <title>Spider-Man 3</title>
-            <type>Multiversal</type>
-            <dataAddress>movie/559</dataAddress>
-            <majorPrereqs>
-                <media>Spider-Man 2</media>
-            </majorPrereqs>
-            <minorPrereqs></minorPrereqs>
-        </media>
-        <media>
-            <title>Fantastic Four</title>
-            <type>Multiversal</type>
-            <dataAddress>movie/9738</dataAddress>
-            <majorPrereqs></majorPrereqs>
-            <minorPrereqs></minorPrereqs>
-        </media>
-        <media>
-            <title>The Amazing Spider-Man</title>
-            <type>Multiversal</type>
-            <dataAddress>movie/1930</dataAddress>
-            <majorPrereqs></majorPrereqs>
-            <minorPrereqs></minorPrereqs>
-        </media>
-        <media>
-            <title>The Amazing Spider-Man 2</title>
-            <type>Multiversal</type>
-            <dataAddress>movie/102382</dataAddress>
-            <majorPrereqs>
-                <media>The Amazing Spider-Man</media>
-            </majorPrereqs>
-            <minorPrereqs></minorPrereqs>
-        </media>
-        <media>
-            <title>Deadpool</title>
-            <type>Multiversal</type>
-            <dataAddress>movie/293660</dataAddress>
-            <majorPrereqs></majorPrereqs>
-            <minorPrereqs>
-                <media>X-Men</media>
-            </minorPrereqs>
-        </media>
-        <media>
-            <title>Logan</title>
-            <type>Multiversal</type>
-            <dataAddress>movie/263115</dataAddress>
-            <majorPrereqs>
-                <media>X-Men</media>
-            </majorPrereqs>
-            <minorPrereqs></minorPrereqs>
-        </media>
         <media>
             <title>Iron Man</title>
             <type>Film</type>
@@ -731,6 +645,94 @@
             <minorPrereqs>
                 <prereq>Trevor Slattery</prereq>
             </minorPrereqs>
+        </media>
+        <!-- Here begins multiversal media: -->
+        <media>
+            <title>Blade</title>
+            <type>Multiversal</type>
+            <dataAddress>movie/36647</dataAddress>
+            <majorPrereqs></majorPrereqs>
+            <minorPrereqs></minorPrereqs>
+        </media>
+        <media>
+            <title>X-Men</title>
+            <type>Multiversal</type>
+            <dataAddress>movie/36657</dataAddress>
+            <majorPrereqs></majorPrereqs>
+            <minorPrereqs></minorPrereqs>
+        </media>
+        <media>
+            <title>Spider-Man</title>
+            <type>Multiversal</type>
+            <dataAddress>movie/557</dataAddress>
+            <majorPrereqs></majorPrereqs>
+            <minorPrereqs></minorPrereqs>
+        </media>
+        <media>
+            <title>Daredevil (film)</title>
+            <type>Multiversal</type>
+            <dataAddress>movie/9480</dataAddress>
+            <majorPrereqs></majorPrereqs>
+            <minorPrereqs></minorPrereqs>
+        </media>
+        <media>
+            <title>Spider-Man 2</title>
+            <type>Multiversal</type>
+            <dataAddress>movie/558</dataAddress>
+            <majorPrereqs>
+                <media>Spider-Man</media>
+            </majorPrereqs>
+            <minorPrereqs></minorPrereqs>
+        </media>
+        <media>
+            <title>Spider-Man 3</title>
+            <type>Multiversal</type>
+            <dataAddress>movie/559</dataAddress>
+            <majorPrereqs>
+                <media>Spider-Man 2</media>
+            </majorPrereqs>
+            <minorPrereqs></minorPrereqs>
+        </media>
+        <media>
+            <title>Fantastic Four</title>
+            <type>Multiversal</type>
+            <dataAddress>movie/9738</dataAddress>
+            <majorPrereqs></majorPrereqs>
+            <minorPrereqs></minorPrereqs>
+        </media>
+        <media>
+            <title>The Amazing Spider-Man</title>
+            <type>Multiversal</type>
+            <dataAddress>movie/1930</dataAddress>
+            <majorPrereqs></majorPrereqs>
+            <minorPrereqs></minorPrereqs>
+        </media>
+        <media>
+            <title>The Amazing Spider-Man 2</title>
+            <type>Multiversal</type>
+            <dataAddress>movie/102382</dataAddress>
+            <majorPrereqs>
+                <media>The Amazing Spider-Man</media>
+            </majorPrereqs>
+            <minorPrereqs></minorPrereqs>
+        </media>
+        <media>
+            <title>Deadpool</title>
+            <type>Multiversal</type>
+            <dataAddress>movie/293660</dataAddress>
+            <majorPrereqs></majorPrereqs>
+            <minorPrereqs>
+                <media>X-Men</media>
+            </minorPrereqs>
+        </media>
+        <media>
+            <title>Logan</title>
+            <type>Multiversal</type>
+            <dataAddress>movie/263115</dataAddress>
+            <majorPrereqs>
+                <media>X-Men</media>
+            </majorPrereqs>
+            <minorPrereqs></minorPrereqs>
         </media>
     </mediaData>
     <prereqData>
