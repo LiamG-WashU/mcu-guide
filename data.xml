@@ -781,6 +781,7 @@
                 <media>Iron Man</media>
                 <media>Iron Man 2</media>
                 <media>Iron Man 3</media>
+                <media>Avengers: Endgame</media>
             </appearances>
         </prereq>
         <prereq>
@@ -790,6 +791,7 @@
                 <media>Iron Man 2</media>
                 <media>Thor</media>
                 <media>The Avengers</media>
+                <media>Agents of S.H.I.E.L.D.</media>
             </appearances>
         </prereq>
         <prereq>
