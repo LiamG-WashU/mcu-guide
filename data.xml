@@ -485,19 +485,19 @@
             <minorPrereqs></minorPrereqs>
         </media>
         <media>
+            <title>Werewolf by Night</title>
+            <type>Film</type>
+            <dataAddress>movie/894205</dataAddress>
+            <majorPrereqs></majorPrereqs>
+            <minorPrereqs></minorPrereqs>
+        </media>
+        <media>
             <title>Black Panther: Wakanda Forever</title>
             <type>Film</type>
             <dataAddress>movie/505642</dataAddress>
             <majorPrereqs>
                 <media>Black Panther</media>
             </majorPrereqs>
-            <minorPrereqs></minorPrereqs>
-        </media>
-        <media>
-            <title>Werewolf by Night</title>
-            <type>Film</type>
-            <dataAddress>movie/894205</dataAddress>
-            <majorPrereqs></majorPrereqs>
             <minorPrereqs></minorPrereqs>
         </media>
         <media>
