@@ -252,7 +252,7 @@
             <type>Series</type>
             <dataAddress>tv/67178</dataAddress>
             <majorPrereqs>
-                <media>Daredevil</media>
+                <prereq>Punisher</prereq>
             </majorPrereqs>
             <minorPrereqs></minorPrereqs>
         </media>
