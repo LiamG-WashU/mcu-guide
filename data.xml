@@ -663,9 +663,7 @@
             <majorPrereqs>
                 <prereq>Punisher</prereq>
             </majorPrereqs>
-            <minorPrereqs>
-                <media>The Punisher</media>
-            </minorPrereqs>
+            <minorPrereqs></minorPrereqs>
         </media>
         <!-- Here begins multiversal media: -->
         <media>
