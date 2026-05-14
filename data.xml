@@ -656,6 +656,17 @@
                 <prereq>Trevor Slattery</prereq>
             </minorPrereqs>
         </media>
+        <media>
+            <title>The Punisher: One Last Kill</title>
+            <type>Film</type>
+            <dataAddress>movie/1439930</dataAddress>
+            <majorPrereqs>
+                <prereq>Punisher</prereq>
+            </majorPrereqs>
+            <minorPrereqs>
+                <media>The Punisher</media>
+            </minorPrereqs>
+        </media>
         <!-- Here begins multiversal media: -->
         <media>
             <title>Blade</title>
@@ -984,6 +995,15 @@
             <appearances>
                 <media>Jessica Jones</media>
                 <media>The Defenders</media>
+            </appearances>
+        </prereq>
+        <prereq>
+            <title>Punisher</title>
+            <appearances>
+                <media>Daredevil</media>
+                <media>The Punisher</media>
+                <media>Daredevil: Born Again</media>
+                <media>The Punisher: One Last Kill</media>
             </appearances>
         </prereq>
         <prereq>
