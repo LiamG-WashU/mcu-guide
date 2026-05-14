@@ -218,9 +218,9 @@
             <type>Series</type>
             <dataAddress>tv/62285</dataAddress>
             <majorPrereqs>
-                <media>Jessica Jones</media>
                 <media>Iron Fist</media>
                 <prereq>Daredevil</prereq>
+                <prereq>Jessica Jones</prereq>
             </majorPrereqs>
             <minorPrereqs>
                 <media>Luke Cage</media>
