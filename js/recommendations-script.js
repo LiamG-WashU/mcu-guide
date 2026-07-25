@@ -30,11 +30,9 @@ async function getRecommendations() {
             for(media of mediaData) {
                 let mediaTitle = media.querySelector("title").textContent;
                 let mediaType = media.querySelector("type").textContent;
-                let mediaDataAddress = media.querySelector("dataAddress").textContent;
 
-                let mediaElementTitle = document.createElement("a");
-                mediaElementTitle.classList.add("quiet-link");
-                mediaElementTitle.href = "./media-information.html?address=" + mediaDataAddress;
+                let mediaElementTitle = document.createElement("span");
+                mediaElementTitle.classList.add("info");
                 mediaElementTitle.textContent = mediaTitle;
 
                 let mediaElement = document.createElement("li");

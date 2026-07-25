@@ -19,7 +19,6 @@ async function createForm() {
             for(media of mediaData) {
                 let mediaTitle = media.querySelector("title").textContent;
                 let mediaType = media.querySelector("type").textContent;
-                let mediaDataAddress = media.querySelector("dataAddress").textContent;
 
                 let checkboxDiv = document.createElement("div");
                 let inputWatchedForm = (mediaType == "Film") ? inputWatchedFilmsForm :
@@ -32,9 +31,8 @@ async function createForm() {
                 checkbox.checked = (localStorage.getItem(checkbox.id) == "true");
                 checkboxDiv.appendChild(checkbox);
 
-                let checkboxTitle = document.createElement("a");
-                checkboxTitle.classList.add("quiet-link");
-                checkboxTitle.href = "./media-information.html?address=" + mediaDataAddress;
+                let checkboxTitle = document.createElement("span");
+                checkboxTitle.classList.add("info");
                 checkboxTitle.textContent = mediaTitle;
 
                 let checkboxLabel = document.createElement("label");
