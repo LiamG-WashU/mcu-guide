@@ -329,6 +329,7 @@
             <type>Series</type>
             <majorPrereqs>
                 <media>Avengers: Endgame</media>
+                <prereq>Falcon</prereq>
                 <prereq>Winter Soldier</prereq>
             </majorPrereqs>
             <minorPrereqs>
