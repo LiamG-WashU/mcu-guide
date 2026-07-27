@@ -33,11 +33,11 @@ async function createForm() {
 
                 let checkboxLabel = document.createElement("label");
                 checkboxLabel.textContent = mediaTitle;
-                checkboxLabel.for = mediaTitle;
+                checkboxLabel.htmlFor = mediaTitle;
                 checkboxLabel.classList.add("info");
                 checkboxDiv.appendChild(checkboxLabel);
                 
-                checkbox.addEventListener("click", function() {
+                checkboxDiv.addEventListener("click", function() {
                     localStorage.setItem(mediaTitle, checkbox.checked);
                 });
             }
