@@ -31,13 +31,10 @@ async function createForm() {
                 checkbox.checked = (localStorage.getItem(checkbox.id) == "true");
                 checkboxDiv.appendChild(checkbox);
 
-                let checkboxTitle = document.createElement("span");
-                checkboxTitle.classList.add("info");
-                checkboxTitle.textContent = mediaTitle;
-
                 let checkboxLabel = document.createElement("label");
+                checkboxLabel.textContent = mediaTitle;
                 checkboxLabel.for = mediaTitle;
-                checkboxLabel.appendChild(checkboxTitle);
+                checkboxLabel.classList.add("info");
                 checkboxDiv.appendChild(checkboxLabel);
                 
                 checkbox.addEventListener("click", function() {
