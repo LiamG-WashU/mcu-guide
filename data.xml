@@ -20,9 +20,7 @@
                 <prereq>Iron Man</prereq>
                 <prereq>Pepper Potts</prereq>
             </majorPrereqs>
-            <minorPrereqs>
-                <media>Iron Man</media>
-            </minorPrereqs>
+            <minorPrereqs></minorPrereqs>
         </media>
         <media>
             <title>Thor</title>
@@ -58,10 +56,9 @@
             <majorPrereqs>
                 <prereq>Iron Man</prereq>
                 <prereq>Pepper Potts</prereq>
-                <prereq>War Machine</prereq>
             </majorPrereqs>
             <minorPrereqs>
-                <media>Iron Man</media>
+                <prereq>War Machine</prereq>
             </minorPrereqs>
         </media>
         <media>
@@ -178,9 +175,11 @@
             <title>Guardians of the Galaxy Vol. 2</title>
             <type>Film</type>
             <majorPrereqs>
-                <media>Guardians of the Galaxy</media>
+                <prereq>Guardians of the Galaxy</prereq>
             </majorPrereqs>
-            <minorPrereqs></minorPrereqs>
+            <minorPrereqs>
+                <media>Guardians of the Galaxy</media>
+            </minorPrereqs>
         </media>
         <media>
             <title>Spider-Man: Homecoming</title>
@@ -195,9 +194,9 @@
             <title>The Defenders</title>
             <type>Series</type>
             <majorPrereqs>
+                <media>Jessica Jones</media>
                 <media>Iron Fist</media>
                 <prereq>Daredevil</prereq>
-                <prereq>Jessica Jones</prereq>
             </majorPrereqs>
             <minorPrereqs>
                 <media>Luke Cage</media>
@@ -225,10 +224,10 @@
         <media>
             <title>The Punisher</title>
             <type>Series</type>
-            <majorPrereqs>
+            <majorPrereqs></majorPrereqs>
+            <minorPrereqs>
                 <prereq>Punisher</prereq>
-            </majorPrereqs>
-            <minorPrereqs></minorPrereqs>
+            </minorPrereqs>
         </media>
         <media>
             <title>Runaways</title>
@@ -307,7 +306,7 @@
             <type>Film</type>
             <majorPrereqs>
                 <prereq>Spider-Man</prereq>
-                <prereq>Peter's friends</prereq>
+                <prereq>MJ and Ned</prereq>
                 <prereq>Nick Fury</prereq>
             </majorPrereqs>
             <minorPrereqs>
@@ -385,7 +384,7 @@
             <type>Film</type>
             <majorPrereqs>
                 <prereq>Spider-Man</prereq>
-                <prereq>Peter's friends</prereq>
+                <prereq>MJ and Ned</prereq>
                 <prereq>Doctor Strange</prereq>
                 <prereq>Original Spider-Man</prereq>
                 <prereq>Amazing Spider-Man</prereq>
@@ -456,7 +455,6 @@
             <type>Film</type>
             <majorPrereqs>
                 <media>Guardians of the Galaxy Vol. 2</media>
-                <media>Avengers: Infinity War</media>
                 <media>Avengers: Endgame</media>
             </majorPrereqs>
             <minorPrereqs></minorPrereqs>
@@ -476,7 +474,7 @@
             <title>Guardians of the Galaxy Vol. 3</title>
             <type>Film</type>
             <majorPrereqs>
-                <media>Avengers: Infinity War</media>
+                <media>Guardians of the Galaxy Vol. 2</media>
                 <media>Avengers: Endgame</media>
             </majorPrereqs>
             <minorPrereqs></minorPrereqs>
@@ -785,6 +783,7 @@
             <appearances>
                 <media>Thor</media>
                 <media>Thor: The Dark World</media>
+                <media>Thor: Love and Thunder</media>
             </appearances>
         </prereq>
         <prereq>
@@ -939,7 +938,7 @@
             </appearances>
         </prereq>
         <prereq>
-            <title>Peter's friends</title>
+            <title>MJ and Ned</title>
             <appearances>
                 <media>Spider-Man: Homecoming</media>
                 <media>Spider-Man: Far From Home</media>
