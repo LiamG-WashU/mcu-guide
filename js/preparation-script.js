@@ -26,7 +26,9 @@ async function findPrereqs(title) {
                     let prereqMediaTitle = prereqTitle.textContent;
                     let morePrereqMedia = await findPrereqs(prereqMediaTitle);
                     for(let newPrereq of morePrereqMedia) {
-                        if(!prereqMedia.includes(newPrereq)) prereqMedia.push(newPrereq);
+                        if(!prereqMedia.includes(newPrereq) && !localStorage.getItem(newPrereq)) {
+                            prereqMedia.push(newPrereq);
+                        }
                     }
                     if(!prereqMedia.includes(prereqMediaTitle)) prereqMedia.push(prereqMediaTitle);
                 }
@@ -43,7 +45,9 @@ async function findPrereqs(title) {
                             let prereqMediaTitle = prereq.querySelector("appearances").children[0].textContent;
                             let morePrereqMedia = await findPrereqs(prereqMediaTitle);
                             for(let newPrereq of morePrereqMedia) {
-                                if(!prereqMedia.includes(newPrereq)) prereqMedia.push(newPrereq);
+                                if(!prereqMedia.includes(newPrereq) && !localStorage.getItem(newPrereq)) {
+                                    prereqMedia.push(newPrereq);
+                                }
                             }
                             if(!prereqMedia.includes(prereqMediaTitle)) prereqMedia.push(prereqMediaTitle);
                         }
