@@ -27,17 +27,11 @@ async function getRecommendations() {
     try {
         await fetchData();
         if(mediaData && mediaData.length > 0) {
-            for(media of mediaData) {
+            for(let media of mediaData) {
                 let mediaTitle = media.querySelector("title").textContent;
                 let mediaType = media.querySelector("type").textContent;
 
-                let mediaElementTitle = document.createElement("span");
-                mediaElementTitle.classList.add("info");
-                mediaElementTitle.textContent = mediaTitle;
-
                 let mediaElement = document.createElement("li");
-                mediaElement.appendChild(mediaElementTitle);
-
                 if(localStorage.getItem(mediaTitle) == "true") {
                     let mediaList = (mediaType == "Film") ? alreadyWatchedFilmsList : (
                     (mediaType == "Series") ? alreadyWatchedSeriesList : alreadyWatchedMultiversalsList);
@@ -70,6 +64,12 @@ async function getRecommendations() {
                         }
                     }
                 }
+                
+                let mediaElementTitle = document.createElement("a");
+                mediaElementTitle.textContent = mediaTitle;
+                mediaElementTitle.href = "preparation.html?title=" + mediaTitle;
+                mediaElementTitle.classList.add("info");
+                mediaElement.appendChild(mediaElementTitle);
             }
         }
         else throw new Error("We could not access the media list.");

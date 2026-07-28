@@ -16,7 +16,7 @@ async function createForm() {
     try {
         await fetchData();
         if(mediaData && mediaData.length > 0) {
-            for(media of mediaData) {
+            for(let media of mediaData) {
                 let mediaTitle = media.querySelector("title").textContent;
                 let mediaType = media.querySelector("type").textContent;
 
