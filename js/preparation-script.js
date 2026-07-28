@@ -2,6 +2,7 @@ const main = document.querySelector("main");
 const heading = document.querySelector("#heading");
 const essentialsOnlyCheckbox = document.querySelector("#essentials-only");
 const essentialsOnlyLabel = document.querySelector("#essentials-only-label");
+const listContainer = document.querySelector("#list-container");
 const prereqList = document.querySelector("#prereq-list");
 
 const mediaTitle = new URL(window.location.href).searchParams.get("title");
@@ -65,34 +66,37 @@ async function findPrereqs(title) {
 }
 
 async function displayPrereqs() {
-    try {
-        prereqList.replaceChildren();
-        if(localStorage.getItem(mediaTitle)) {
-            heading.textContent = "You have already watched " + mediaTitle + ".";
-            essentialsOnlyCheckbox.classList.add("invisible");
-            essentialsOnlyLabel.classList.add("invisible");
-        }
-        else {
-            await fetchData();
-            if(mediaData && mediaData.length > 0) {
-                prereqMedia = await findPrereqs(mediaTitle);
-                if(prereqMedia.length > 0) {
-                    heading.textContent = "Before you watch " + mediaTitle + ", you should watch these:"
-                    for(let media of mediaData) {
-                        if(prereqMedia.includes(media.querySelector("title").textContent)) {
-                            let prereqMediaElement = document.createElement("li");
-                            prereqMediaElement.textContent = media.querySelector("title").textContent;
-                            prereqMediaElement.classList.add("info");
-                            prereqList.appendChild(prereqMediaElement);
-                        }
+    prereqList.replaceChildren();
+    if(localStorage.getItem(mediaTitle)) {
+        heading.textContent = "You have already watched " + mediaTitle + ".";
+        essentialsOnlyCheckbox.classList.add("invisible");
+        essentialsOnlyLabel.classList.add("invisible");
+        listContainer.classList.add("invisible");
+    }
+    else try {
+        await fetchData();
+        if(mediaData && mediaData.length > 0) {
+            prereqMedia = await findPrereqs(mediaTitle);
+            if(prereqMedia.length > 0) {
+                heading.textContent = "Before you watch " + mediaTitle + ", you should watch these:"
+                listContainer.classList.remove("invisible");
+                for(let media of mediaData) {
+                    if(prereqMedia.includes(media.querySelector("title").textContent)) {
+                        let prereqMediaElement = document.createElement("li");
+                        prereqMediaElement.textContent = media.querySelector("title").textContent;
+                        prereqMediaElement.classList.add("info");
+                        prereqList.appendChild(prereqMediaElement);
                     }
                 }
-                else heading.textContent = "You are ready to watch " + mediaTitle + "!";
-                essentialsOnlyCheckbox.classList.remove("invisible");
-                essentialsOnlyLabel.classList.remove("invisible");
             }
-            else throw new Error("We could not access the media list.");
+            else {
+                heading.textContent = "You are ready to watch " + mediaTitle + "!";
+                listContainer.classList.add("invisible");
+            }
+            essentialsOnlyCheckbox.classList.remove("invisible");
+            essentialsOnlyLabel.classList.remove("invisible");
         }
+        else throw new Error("We could not access the media list.");
     }
     catch(error) {
         console.error(error);
