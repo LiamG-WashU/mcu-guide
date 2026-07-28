@@ -77,3 +77,7 @@ footer {
     margin-right: 2vh;
     margin-left: auto;
 }
+
+.invisible {
+    display: none;
+}

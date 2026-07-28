@@ -1,5 +1,7 @@
 const main = document.querySelector("main");
 const heading = document.querySelector("#heading");
+const essentialsOnlyCheckbox = document.querySelector("#essentials-only");
+const essentialsOnlyLabel = document.querySelector("#essentials-only-label");
 const prereqList = document.querySelector("#prereq-list");
 
 const mediaTitle = new URL(window.location.href).searchParams.get("title");
@@ -15,13 +17,16 @@ async function fetchData() {
     prereqData = data.querySelector("prereqData").children;
 }
 
-async function findPrereqs(title) {    
+async function findPrereqs(title) {
     let prereqMedia = [];
     for(let media of mediaData) {
         if(media.querySelector("title").textContent == title) {
             let majorPrereqs = media.querySelector("majorPrereqs").children;
             let minorPrereqs = media.querySelector("minorPrereqs").children;
-            for(let prereqTitle of [...majorPrereqs, ...minorPrereqs]) {
+            let prereqs;
+            if(essentialsOnlyCheckbox.checked) prereqs = majorPrereqs;
+            else prereqs = [...majorPrereqs, ...minorPrereqs];
+            for(let prereqTitle of prereqs) {
                 if(prereqTitle.nodeName == "media") {
                     let prereqMediaTitle = prereqTitle.textContent;
                     let morePrereqMedia = await findPrereqs(prereqMediaTitle);
@@ -61,7 +66,12 @@ async function findPrereqs(title) {
 
 async function displayPrereqs() {
     try {
-        if(localStorage.getItem(mediaTitle)) heading.textContent = "You have already watched " + mediaTitle + ".";
+        prereqList.replaceChildren();
+        if(localStorage.getItem(mediaTitle)) {
+            heading.textContent = "You have already watched " + mediaTitle + ".";
+            essentialsOnlyCheckbox.classList.add("invisible");
+            essentialsOnlyLabel.classList.add("invisible");
+        }
         else {
             await fetchData();
             if(mediaData && mediaData.length > 0) {
@@ -78,6 +88,8 @@ async function displayPrereqs() {
                     }
                 }
                 else heading.textContent = "You are ready to watch " + mediaTitle + "!";
+                essentialsOnlyCheckbox.classList.remove("invisible");
+                essentialsOnlyLabel.classList.remove("invisible");
             }
             else throw new Error("We could not access the media list.");
         }
@@ -89,3 +101,6 @@ async function displayPrereqs() {
 }
 
 displayPrereqs();
+essentialsOnlyCheckbox.addEventListener("click", function() {
+    displayPrereqs();
+});
