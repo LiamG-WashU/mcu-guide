@@ -67,7 +67,7 @@ async function getRecommendations() {
                 
                 let mediaElementTitle = document.createElement("a");
                 mediaElementTitle.textContent = mediaTitle;
-                mediaElementTitle.href = "preparation.html?title=" + mediaTitle;
+                mediaElementTitle.href = "preparation.html?title=" + encodeURIComponent(mediaTitle);
                 mediaElementTitle.classList.add("info");
                 mediaElement.appendChild(mediaElementTitle);
             }
