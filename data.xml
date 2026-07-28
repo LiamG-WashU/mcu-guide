@@ -380,7 +380,7 @@
             <type>Film</type>
             <majorPrereqs>
                 <prereq>Spider-Man</prereq>
-                <prereq>MJ and Ned</prereq>
+                <prereq>Ned Leeds</prereq>
                 <prereq>Nick Fury</prereq>
             </majorPrereqs>
             <minorPrereqs>
@@ -459,13 +459,13 @@
             <type>Film</type>
             <majorPrereqs>
                 <prereq>Spider-Man</prereq>
-                <prereq>MJ and Ned</prereq>
+                <prereq>MJ</prereq>
                 <prereq>Doctor Strange</prereq>
                 <prereq>Original Spider-Man</prereq>
                 <prereq>Amazing Spider-Man</prereq>
             </majorPrereqs>
             <minorPrereqs>
-                <media>Spider-Man: Far From Home</media>
+                <prereq>Ned Leeds</prereq>
                 <media>Spider-Man</media>
                 <media>Spider-Man 2</media>
                 <media>Spider-Man 3</media>
@@ -945,7 +945,7 @@
             </appearances>
         </prereq>
         <prereq>
-            <title>MJ and Ned</title>
+            <title>Ned Leeds</title>
             <appearances>
                 <media>Spider-Man: Homecoming</media>
                 <media>Spider-Man: Far From Home</media>
@@ -967,6 +967,13 @@
                 <media>Captain Marvel</media>
                 <media>Avengers: Endgame</media>
                 <media>The Marvels</media>
+            </appearances>
+        </prereq>
+        <prereq>
+            <title>MJ</title>
+            <appearances>
+                <media>Spider-Man: Far From Home</media>
+                <media>Spider-Man: No Way Home</media>
             </appearances>
         </prereq>
         <prereq>
