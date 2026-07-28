@@ -10,7 +10,7 @@ const mediaTitle = new URL(window.location.href).searchParams.get("title");
 let mediaData, prereqData;
 
 async function fetchData() {
-    let response = await fetch("./data.xml");
+    let response = await fetch("https://liamg-washu.github.io/mcu-guide/data.xml");
     if(!response.ok) throw new Error("Failed to connect to the server!");
     let responseXML = await response.text();
     let data = new DOMParser().parseFromString(responseXML, "text/xml");
@@ -18,51 +18,50 @@ async function fetchData() {
     prereqData = data.querySelector("prereqData").children;
 }
 
-async function findPrereqs(title) {
+function getMediaItem(title) {
+    for(let mediaItem of mediaData) {
+        if(mediaItem.querySelector("title").textContent == title) return mediaItem;
+    }
+}
+
+function getPrereqItem(title) {
+    for(let prereqItem of prereqData) {
+        if(prereqItem.querySelector("title").textContent == title) return prereqItem;
+    }
+}
+
+function findPrereqs(title) {
     let prereqMedia = [];
-    for(let media of mediaData) {
-        if(media.querySelector("title").textContent == title) {
-            let majorPrereqs = media.querySelector("majorPrereqs").children;
-            let minorPrereqs = media.querySelector("minorPrereqs").children;
-            let prereqs;
-            if(essentialsOnlyCheckbox.checked) prereqs = majorPrereqs;
-            else prereqs = [...majorPrereqs, ...minorPrereqs];
-            for(let prereqTitle of prereqs) {
-                if(prereqTitle.nodeName == "media") {
-                    let prereqMediaTitle = prereqTitle.textContent;
-                    let morePrereqMedia = await findPrereqs(prereqMediaTitle);
-                    for(let newPrereq of morePrereqMedia) {
-                        if(!prereqMedia.includes(newPrereq) && !localStorage.getItem(newPrereq)) {
-                            prereqMedia.push(newPrereq);
-                        }
-                    }
-                    if(!prereqMedia.includes(prereqMediaTitle)) prereqMedia.push(prereqMediaTitle);
-                }
-                else for(let prereq of prereqData) {
-                    if(prereq.querySelector("title").textContent == prereqTitle.textContent) {
-                        prereqSatisfied = false;
-                        for(let appearance of prereq.querySelector("appearances").children) {
-                            if(prereqMedia.includes(appearance.textContent) || localStorage.getItem(appearance.textContent)) {
-                                prereqSatisfied = true;
-                                break;
-                            }
-                        }
-                        if(!prereqSatisfied) {
-                            let prereqMediaTitle = prereq.querySelector("appearances").children[0].textContent;
-                            let morePrereqMedia = await findPrereqs(prereqMediaTitle);
-                            for(let newPrereq of morePrereqMedia) {
-                                if(!prereqMedia.includes(newPrereq) && !localStorage.getItem(newPrereq)) {
-                                    prereqMedia.push(newPrereq);
-                                }
-                            }
-                            if(!prereqMedia.includes(prereqMediaTitle)) prereqMedia.push(prereqMediaTitle);
-                        }
-                    }
+    let mediaItem = getMediaItem(title);
+    let majorPrereqs = mediaItem.querySelector("majorPrereqs").children;
+    let minorPrereqs = mediaItem.querySelector("minorPrereqs").children;
+    let prereqs = (essentialsOnlyCheckbox.checked) ? majorPrereqs : [...majorPrereqs, ...minorPrereqs];
+    for(let prereqTitle of prereqs) {
+        if(prereqTitle.nodeName == "media") {
+            let prereqMediaTitle = prereqTitle.textContent;
+            if(!prereqMedia.includes(prereqMediaTitle)) prereqMedia.push(prereqMediaTitle);
+            for(let newPrereq of findPrereqs(prereqMediaTitle)) {
+                if(!prereqMedia.includes(newPrereq) && !localStorage.getItem(newPrereq)) prereqMedia.push(newPrereq);
+            }
+        }
+        else {
+            let prereqItem = getPrereqItem(prereqTitle.textContent);
+            let prereqSatisfied = false;
+            for(let appearance of prereqItem.querySelector("appearances").children) {
+                if(prereqMedia.includes(appearance.textContent) || localStorage.getItem(appearance.textContent)) {
+                    prereqSatisfied = true;
                 }
             }
-            return prereqMedia;
+            if(!prereqSatisfied) {
+                let prereqMediaTitle = prereqItem.querySelector("appearances").children[0].textContent;
+                if(!prereqMedia.includes(prereqMediaTitle)) prereqMedia.push(prereqMediaTitle);
+                for(let newPrereq of findPrereqs(prereqMediaTitle)) {
+                    if(!prereqMedia.includes(newPrereq) && !localStorage.getItem(newPrereq)) prereqMedia.push(newPrereq);
+                }
+            }
         }
     }
+    return prereqMedia;
 }
 
 async function displayPrereqs() {
@@ -76,7 +75,7 @@ async function displayPrereqs() {
     else try {
         await fetchData();
         if(mediaData && mediaData.length > 0) {
-            prereqMedia = await findPrereqs(mediaTitle);
+            prereqMedia = findPrereqs(mediaTitle);
             if(prereqMedia.length > 0) {
                 heading.textContent = "Before you watch " + mediaTitle + ", you should watch these:"
                 listContainer.classList.remove("invisible");
