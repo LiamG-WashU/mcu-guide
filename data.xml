@@ -195,8 +195,8 @@
             <type>Series</type>
             <majorPrereqs>
                 <media>Jessica Jones</media>
-                <media>Iron Fist</media>
                 <prereq>Daredevil</prereq>
+                <media>Iron Fist</media>
             </majorPrereqs>
             <minorPrereqs>
                 <media>Luke Cage</media>
@@ -274,8 +274,7 @@
             <title>Ant-Man and the Wasp</title>
             <type>Film</type>
             <majorPrereqs>
-                <prereq>Ant-Man</prereq>
-                <prereq>Pym family</prereq>
+                <media>Ant-Man</media>
             </majorPrereqs>
             <minorPrereqs>
                 <media>Captain America: Civil War</media>
@@ -292,11 +291,11 @@
             <type>Film</type>
             <majorPrereqs>
                 <media>Avengers: Infinity War</media>
-                <media>The Avengers</media>
                 <prereq>Ant-Man</prereq>
                 <prereq>Hawkeye</prereq>
             </majorPrereqs>
             <minorPrereqs>
+                <media>The Avengers</media>
                 <media>Ant-Man and the Wasp</media>
                 <prereq>Captain Marvel</prereq>
             </minorPrereqs>
@@ -328,9 +327,9 @@
             <title>The Falcon and the Winter Soldier</title>
             <type>Series</type>
             <majorPrereqs>
-                <media>Avengers: Endgame</media>
                 <prereq>Falcon</prereq>
                 <prereq>Winter Soldier</prereq>
+                <media>Avengers: Endgame</media>
             </majorPrereqs>
             <minorPrereqs>
                 <media>Captain America: Civil War</media>
@@ -464,10 +463,10 @@
             <title>Ant-Man and the Wasp: Quantumania</title>
             <type>Film</type>
             <majorPrereqs>
-                <prereq>Ant-Man</prereq>
-                <prereq>Pym family</prereq>
+                <media>Ant-Man and the Wasp</media>
             </majorPrereqs>
             <minorPrereqs>
+                <media>Ant-Man</media>
                 <media>Avengers: Endgame</media>
             </minorPrereqs>
         </media>
@@ -513,10 +512,10 @@
             <majorPrereqs>
                 <media>Deadpool</media>
                 <media>X-Men</media>
-                <media>Logan</media>
-                <media>Loki</media>
             </majorPrereqs>
             <minorPrereqs>
+                <media>Logan</media>
+                <media>Loki</media>
                 <media>Fantastic Four</media>
                 <media>Blade</media>
                 <media>Daredevil (film)</media>
@@ -905,14 +904,6 @@
             </appearances>
         </prereq>
         <prereq>
-            <title>Pym family</title>
-            <appearances>
-                <media>Ant-Man</media>
-                <media>Ant-Man and the Wasp</media>
-                <media>Ant-Man and the Wasp: Quantumania</media>
-            </appearances>
-        </prereq>
-        <prereq>
             <title>Jessica Jones</title>
             <appearances>
                 <media>Jessica Jones</media>
@@ -939,14 +930,6 @@
             </appearances>
         </prereq>
         <prereq>
-            <title>MJ and Ned</title>
-            <appearances>
-                <media>Spider-Man: Homecoming</media>
-                <media>Spider-Man: Far From Home</media>
-                <media>Spider-Man: No Way Home</media>
-            </appearances>
-        </prereq>
-        <prereq>
             <title>Black Panther</title>
             <appearances>
                 <media>Captain America: Civil War</media>
@@ -961,6 +944,14 @@
                 <media>Avengers: Infinity War</media>
                 <media>Spider-Man: No Way Home</media>
                 <media>Doctor Strange in the Multiverse of Madness</media>
+            </appearances>
+        </prereq>
+        <prereq>
+            <title>MJ and Ned</title>
+            <appearances>
+                <media>Spider-Man: Homecoming</media>
+                <media>Spider-Man: Far From Home</media>
+                <media>Spider-Man: No Way Home</media>
             </appearances>
         </prereq>
         <prereq>
