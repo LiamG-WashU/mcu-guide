@@ -57,23 +57,26 @@ async function findPrereqs(title) {
 
 async function displayPrereqs() {
     try {
-        await fetchData();
-        if(mediaData && mediaData.length > 0) {
-            prereqMedia = await findPrereqs(mediaTitle);
-            if(prereqMedia.length > 0) {
-                heading.textContent = "Before you watch " + mediaTitle + ", you should watch these:"
-                for(let media of mediaData) {
-                    if(prereqMedia.includes(media.querySelector("title").textContent)) {
-                        let prereqMediaElement = document.createElement("li");
-                        prereqMediaElement.textContent = media.querySelector("title").textContent;
-                        prereqMediaElement.classList.add("info");
-                        prereqList.appendChild(prereqMediaElement);
+        if(localStorage.getItem(mediaTitle)) heading.textContent = "You have already watched " + mediaTitle + ".";
+        else {
+            await fetchData();
+            if(mediaData && mediaData.length > 0) {
+                prereqMedia = await findPrereqs(mediaTitle);
+                if(prereqMedia.length > 0) {
+                    heading.textContent = "Before you watch " + mediaTitle + ", you should watch these:"
+                    for(let media of mediaData) {
+                        if(prereqMedia.includes(media.querySelector("title").textContent)) {
+                            let prereqMediaElement = document.createElement("li");
+                            prereqMediaElement.textContent = media.querySelector("title").textContent;
+                            prereqMediaElement.classList.add("info");
+                            prereqList.appendChild(prereqMediaElement);
+                        }
                     }
                 }
+                else heading.textContent = "You are ready to watch " + mediaTitle + "!";
             }
-            else heading.textContent = "You are ready to watch " + mediaTitle + "!";
+            else throw new Error("We could not access the media list.");
         }
-        else throw new Error("We could not access the media list.");
     }
     catch(error) {
         console.error(error);
