@@ -78,6 +78,8 @@ async function displayPrereqs() {
                 prereqMedia = await findPrereqs(mediaTitle);
                 if(prereqMedia.length > 0) {
                     heading.textContent = "Before you watch " + mediaTitle + ", you should watch these:"
+                    essentialsOnlyCheckbox.classList.remove("invisible");
+                    essentialsOnlyLabel.classList.remove("invisible");
                     for(let media of mediaData) {
                         if(prereqMedia.includes(media.querySelector("title").textContent)) {
                             let prereqMediaElement = document.createElement("li");
@@ -87,9 +89,11 @@ async function displayPrereqs() {
                         }
                     }
                 }
-                else heading.textContent = "You are ready to watch " + mediaTitle + "!";
-                essentialsOnlyCheckbox.classList.remove("invisible");
-                essentialsOnlyLabel.classList.remove("invisible");
+                else {
+                    heading.textContent = "You are ready to watch " + mediaTitle + "!";
+                    essentialsOnlyCheckbox.classList.add("invisible");
+                    essentialsOnlyLabel.classList.add("invisible");
+                }
             }
             else throw new Error("We could not access the media list.");
         }
