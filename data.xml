@@ -673,6 +673,18 @@
             </majorPrereqs>
             <minorPrereqs></minorPrereqs>
         </media>
+        <media>
+            <title>Spider-Man: Brand New Day</title>
+            <type>Film</type>
+            <majorPrereqs>
+                <media>Spider-Man: No Way Home</media>
+                <prereq>Punisher</prereq>
+                <prereq>Hulk</prereq>
+            </majorPrereqs>
+            <minorPrereqs>
+                <prereq>Yelena Belova</prereq>
+            </minorPrereqs>
+        </media>
     </mediaData>
     <prereqData>
         <prereq>
@@ -723,6 +735,9 @@
                 <media>The Avengers</media>
                 <media>Avengers: Age of Ultron</media>
                 <media>Thor: Ragnarok</media>
+                <media>Avengers: Endgame</media>
+                <media>She-Hulk: Attorney at Law</media>
+                <media>Spider-Man: Brand New Day</media>
             </appearances>
         </prereq>
         <prereq>
@@ -915,6 +930,7 @@
                 <media>The Punisher</media>
                 <media>Daredevil: Born Again</media>
                 <media>The Punisher: One Last Kill</media>
+                <media>Spider-Man: Brand New Day</media>
             </appearances>
         </prereq>
         <prereq>
@@ -925,6 +941,7 @@
                 <media>Avengers: Infinity War</media>
                 <media>Spider-Man: Far From Home</media>
                 <media>Spider-Man: No Way Home</media>
+                <media>Spider-Man: Brand New Day</media>
             </appearances>
         </prereq>
         <prereq>
@@ -950,6 +967,7 @@
                 <media>Spider-Man: Homecoming</media>
                 <media>Spider-Man: Far From Home</media>
                 <media>Spider-Man: No Way Home</media>
+                <media>Spider-Man: Brand New Day</media>
             </appearances>
         </prereq>
         <prereq>
@@ -974,6 +992,7 @@
             <appearances>
                 <media>Spider-Man: Far From Home</media>
                 <media>Spider-Man: No Way Home</media>
+                <media>Spider-Man: Brand New Day</media>
             </appearances>
         </prereq>
         <prereq>
@@ -982,6 +1001,7 @@
                 <media>Black Widow</media>
                 <media>Hawkeye</media>
                 <media>Thunderbolts*</media>
+                <media>Spider-Man: Brand New Day</media>
             </appearances>
         </prereq>
     </prereqData>
