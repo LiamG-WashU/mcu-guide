@@ -39,7 +39,7 @@ function findPrereqs(title) {
     for(let prereqTitle of prereqs) {
         if(prereqTitle.nodeName == "media") {
             let prereqMediaTitle = prereqTitle.textContent;
-            if(!prereqMedia.includes(prereqMediaTitle)) prereqMedia.push(prereqMediaTitle);
+            if(!prereqMedia.includes(prereqMediaTitle) && !localStorage.getItem(newPrereq)) prereqMedia.push(prereqMediaTitle);
             for(let newPrereq of findPrereqs(prereqMediaTitle)) {
                 if(!prereqMedia.includes(newPrereq) && !localStorage.getItem(newPrereq)) prereqMedia.push(newPrereq);
             }
@@ -54,7 +54,7 @@ function findPrereqs(title) {
             }
             if(!prereqSatisfied) {
                 let prereqMediaTitle = prereqItem.querySelector("appearances").children[0].textContent;
-                if(!prereqMedia.includes(prereqMediaTitle)) prereqMedia.push(prereqMediaTitle);
+                if(!prereqMedia.includes(prereqMediaTitle) && !localStorage.getItem(newPrereq)) prereqMedia.push(prereqMediaTitle);
                 for(let newPrereq of findPrereqs(prereqMediaTitle)) {
                     if(!prereqMedia.includes(newPrereq) && !localStorage.getItem(newPrereq)) prereqMedia.push(newPrereq);
                 }
