@@ -95,7 +95,8 @@
                 <prereq>Black Widow</prereq>
                 <prereq>Phil Coulson</prereq>
             </minorPrereqs>
-        </media><media>
+        </media>
+        <media>
             <title>The Amazing Spider-Man</title>
             <type>Multiversal</type>
             <majorPrereqs></majorPrereqs>
@@ -683,6 +684,16 @@
             </majorPrereqs>
             <minorPrereqs>
                 <prereq>Yelena Belova</prereq>
+            </minorPrereqs>
+        </media>
+        <media>
+            <title>VisionQuest</title>
+            <type>Series</type>
+            <majorPrereqs>
+                <media>WandaVision</media>
+            </majorPrereqs>
+            <minorPrereqs>
+                <media>Agatha All Along</media>
             </minorPrereqs>
         </media>
     </mediaData>
